@@ -30,6 +30,7 @@
 
 @protocol BDBaseViewControllerDelegate<NSObject>
 
+@optional
 -(void)left_Button_Event:(UIButton *)sender;
 -(void)right_Button_Event:(UIButton *)sender;
 -(void)title_Clicked_Event:(UIView *)sender;

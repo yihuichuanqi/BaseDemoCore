@@ -9,5 +9,9 @@
 #ifndef BDMineConfigHeader_h
 #define BDMineConfigHeader_h
 
+static NSString *const kMineModuleActionsDictionaryKeyName=@"name";
+static NSString *const kMineModuleActionsDictionaryKeyId=@"ID";
+static NSString *const kMineMoudleActionDictionaryKeyImage=@"image";
+
 
 #endif /* BDMineConfigHeader_h */

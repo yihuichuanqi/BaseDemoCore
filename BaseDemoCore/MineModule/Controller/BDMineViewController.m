@@ -7,6 +7,8 @@
 //
 
 #import "BDMineViewController.h"
+#import "BDMineServiceApi.h"
+#import "CTMediator+BDOrderModuleActions.h"
 
 @interface BDMineViewController ()
 
@@ -15,9 +17,43 @@
 @implementation BDMineViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+    
+    self.view.backgroundColor=[UIColor redColor];
+    
+    
+    BDMineServiceApi *serviceApi=[[BDMineServiceApi alloc]init];
+    [serviceApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"请求成功");
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+       
+        NSLog(@"请求失败");
+    }];
+    
+    
+    UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"点击" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.equalTo(self.view).with.offset(100);
+        make.centerX.equalTo(self.view);
+        
+    }];
+    
+    
+    
+    
     // Do any additional setup after loading the view.
 }
+-(void)btnClicked:(UIButton *)button
+{
+    UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Order_ViewControllerForOrder];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

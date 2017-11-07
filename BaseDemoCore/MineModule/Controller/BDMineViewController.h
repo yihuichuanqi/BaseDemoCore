@@ -7,6 +7,8 @@
 //
 
 #import "BDBaseViewController.h"
+#import "BDMineModulePrefix.h"
+#import "BDMineConfigHeader.h"
 
 @interface BDMineViewController : BDBaseViewController
 

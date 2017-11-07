@@ -17,6 +17,18 @@
 		845C70B31FB14A09009ED54C /* BDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B21FB14A09009ED54C /* BDHomeViewController.m */; };
 		845C70B61FB14A1A009ED54C /* BDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B51FB14A1A009ED54C /* BDMineViewController.m */; };
 		845C70BA1FB14A34009ED54C /* BDPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B91FB14A34009ED54C /* BDPublicViewController.m */; };
+		845C70BF1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70BE1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.m */; };
+		845C70C21FB15C6C009ED54C /* Target_Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70C11FB15C6C009ED54C /* Target_Mine.m */; };
+		845C70C91FB15F2D009ED54C /* BDBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70C81FB15F2D009ED54C /* BDBaseRequest.m */; };
+		845C70CD1FB15F80009ED54C /* BDMineServiceApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70CC1FB15F80009ED54C /* BDMineServiceApi.m */; };
+		845C70D41FB17A2C009ED54C /* Target_Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70D31FB17A2C009ED54C /* Target_Home.m */; };
+		845C70D71FB17B17009ED54C /* CTMediator+BDHomeModuleActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70D61FB17B17009ED54C /* CTMediator+BDHomeModuleActions.m */; };
+		845C70DE1FB17CE9009ED54C /* Target_Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70DD1FB17CE9009ED54C /* Target_Public.m */; };
+		845C70E11FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70E01FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.m */; };
+		845C70E61FB18289009ED54C /* ImageSource.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845C70E51FB18288009ED54C /* ImageSource.xcassets */; };
+		845C70EF1FB184FC009ED54C /* BDOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70EE1FB184FC009ED54C /* BDOrderViewController.m */; };
+		845C70F21FB1851D009ED54C /* Target_Order.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70F11FB1851D009ED54C /* Target_Order.m */; };
+		845C70F51FB18581009ED54C /* CTMediator+BDOrderModuleActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70F41FB18581009ED54C /* CTMediator+BDOrderModuleActions.m */; };
 		849977121FB06080003C8811 /* BDCoreConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849977101FB06080003C8811 /* BDCoreConfigManager.m */; };
 		849977161FB060C0003C8811 /* BDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 849977151FB060C0003C8811 /* BDFileLogger.m */; };
 		8499771A1FB0620B003C8811 /* BDLoggerFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 849977191FB0620B003C8811 /* BDLoggerFormatter.m */; };
@@ -67,6 +79,32 @@
 		845C70B51FB14A1A009ED54C /* BDMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMineViewController.m; sourceTree = "<group>"; };
 		845C70B81FB14A34009ED54C /* BDPublicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPublicViewController.h; sourceTree = "<group>"; };
 		845C70B91FB14A34009ED54C /* BDPublicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDPublicViewController.m; sourceTree = "<group>"; };
+		845C70BB1FB152ED009ED54C /* BDMineModulePrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMineModulePrefix.h; sourceTree = "<group>"; };
+		845C70BC1FB15390009ED54C /* BDCoreMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDCoreMacros.h; sourceTree = "<group>"; };
+		845C70BD1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+BDMimeModuleActions.h"; sourceTree = "<group>"; };
+		845C70BE1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+BDMimeModuleActions.m"; sourceTree = "<group>"; };
+		845C70C01FB15C6C009ED54C /* Target_Mine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Mine.h; sourceTree = "<group>"; };
+		845C70C11FB15C6C009ED54C /* Target_Mine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Mine.m; sourceTree = "<group>"; };
+		845C70C71FB15F2D009ED54C /* BDBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBaseRequest.h; sourceTree = "<group>"; };
+		845C70C81FB15F2D009ED54C /* BDBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBaseRequest.m; sourceTree = "<group>"; };
+		845C70CB1FB15F80009ED54C /* BDMineServiceApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMineServiceApi.h; sourceTree = "<group>"; };
+		845C70CC1FB15F80009ED54C /* BDMineServiceApi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMineServiceApi.m; sourceTree = "<group>"; };
+		845C70D21FB17A2C009ED54C /* Target_Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Home.h; sourceTree = "<group>"; };
+		845C70D31FB17A2C009ED54C /* Target_Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Home.m; sourceTree = "<group>"; };
+		845C70D51FB17B17009ED54C /* CTMediator+BDHomeModuleActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+BDHomeModuleActions.h"; sourceTree = "<group>"; };
+		845C70D61FB17B17009ED54C /* CTMediator+BDHomeModuleActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+BDHomeModuleActions.m"; sourceTree = "<group>"; };
+		845C70DC1FB17CE9009ED54C /* Target_Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Public.h; sourceTree = "<group>"; };
+		845C70DD1FB17CE9009ED54C /* Target_Public.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Public.m; sourceTree = "<group>"; };
+		845C70DF1FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+BDPublicModuleActions.h"; sourceTree = "<group>"; };
+		845C70E01FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+BDPublicModuleActions.m"; sourceTree = "<group>"; };
+		845C70E21FB17EDB009ED54C /* BaseDemoPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseDemoPrefixHeader.pch; sourceTree = "<group>"; };
+		845C70E51FB18288009ED54C /* ImageSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageSource.xcassets; sourceTree = "<group>"; };
+		845C70ED1FB184FC009ED54C /* BDOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDOrderViewController.h; sourceTree = "<group>"; };
+		845C70EE1FB184FC009ED54C /* BDOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDOrderViewController.m; sourceTree = "<group>"; };
+		845C70F01FB1851D009ED54C /* Target_Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Order.h; sourceTree = "<group>"; };
+		845C70F11FB1851D009ED54C /* Target_Order.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Order.m; sourceTree = "<group>"; };
+		845C70F31FB18581009ED54C /* CTMediator+BDOrderModuleActions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+BDOrderModuleActions.h"; sourceTree = "<group>"; };
+		845C70F41FB18581009ED54C /* CTMediator+BDOrderModuleActions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+BDOrderModuleActions.m"; sourceTree = "<group>"; };
 		849977101FB06080003C8811 /* BDCoreConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDCoreConfigManager.m; sourceTree = "<group>"; };
 		849977111FB06080003C8811 /* BDCoreConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDCoreConfigManager.h; sourceTree = "<group>"; };
 		849977141FB060C0003C8811 /* BDFileLogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFileLogger.h; sourceTree = "<group>"; };
@@ -152,6 +190,9 @@
 			children = (
 				8448B81C1FB042E900EF1925 /* AppDelegate.h */,
 				8448B81D1FB042E900EF1925 /* AppDelegate.m */,
+				845C70E21FB17EDB009ED54C /* BaseDemoPrefixHeader.pch */,
+				845C70E71FB184BA009ED54C /* OrderModule */,
+				845C70E41FB18264009ED54C /* Resources */,
 				8499772C1FB06C24003C8811 /* PublicModule */,
 				8499772B1FB06C17003C8811 /* MineModule */,
 				8499772A1FB06C0F003C8811 /* HomeModule */,
@@ -200,6 +241,149 @@
 				845C70B91FB14A34009ED54C /* BDPublicViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		845C70C31FB15EC4009ED54C /*  BDNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				845C70C71FB15F2D009ED54C /* BDBaseRequest.h */,
+				845C70C81FB15F2D009ED54C /* BDBaseRequest.m */,
+			);
+			path = " BDNetWork";
+			sourceTree = "<group>";
+		};
+		845C70CA1FB15F55009ED54C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				845C70CB1FB15F80009ED54C /* BDMineServiceApi.h */,
+				845C70CC1FB15F80009ED54C /* BDMineServiceApi.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		845C70CE1FB1788C009ED54C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				845C70D51FB17B17009ED54C /* CTMediator+BDHomeModuleActions.h */,
+				845C70D61FB17B17009ED54C /* CTMediator+BDHomeModuleActions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		845C70CF1FB17898009ED54C /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				845C70D21FB17A2C009ED54C /* Target_Home.h */,
+				845C70D31FB17A2C009ED54C /* Target_Home.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		845C70D01FB1789F009ED54C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		845C70D11FB178A4009ED54C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		845C70D81FB17CB3009ED54C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				845C70DF1FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.h */,
+				845C70E01FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		845C70D91FB17CBC009ED54C /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				845C70DC1FB17CE9009ED54C /* Target_Public.h */,
+				845C70DD1FB17CE9009ED54C /* Target_Public.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		845C70DA1FB17CC3009ED54C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		845C70DB1FB17CC7009ED54C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		845C70E41FB18264009ED54C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				845C70E51FB18288009ED54C /* ImageSource.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		845C70E71FB184BA009ED54C /* OrderModule */ = {
+			isa = PBXGroup;
+			children = (
+				845C70EC1FB184DD009ED54C /* Service */,
+				845C70EB1FB184D8009ED54C /* Other */,
+				845C70EA1FB184D2009ED54C /* Category */,
+				845C70E91FB184CD009ED54C /* Actions */,
+				845C70E81FB184C7009ED54C /* Controller */,
+			);
+			path = OrderModule;
+			sourceTree = "<group>";
+		};
+		845C70E81FB184C7009ED54C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				845C70ED1FB184FC009ED54C /* BDOrderViewController.h */,
+				845C70EE1FB184FC009ED54C /* BDOrderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		845C70E91FB184CD009ED54C /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				845C70F01FB1851D009ED54C /* Target_Order.h */,
+				845C70F11FB1851D009ED54C /* Target_Order.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		845C70EA1FB184D2009ED54C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				845C70F31FB18581009ED54C /* CTMediator+BDOrderModuleActions.h */,
+				845C70F41FB18581009ED54C /* CTMediator+BDOrderModuleActions.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		845C70EB1FB184D8009ED54C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		845C70EC1FB184DD009ED54C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		849977131FB06092003C8811 /* BDLoggerHelper */ = {
@@ -260,6 +444,10 @@
 		8499772A1FB06C0F003C8811 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				845C70D11FB178A4009ED54C /* Service */,
+				845C70D01FB1789F009ED54C /* Other */,
+				845C70CF1FB17898009ED54C /* Actions */,
+				845C70CE1FB1788C009ED54C /* Category */,
 				845C70B01FB149DD009ED54C /* Controller */,
 			);
 			path = HomeModule;
@@ -268,6 +456,7 @@
 		8499772B1FB06C17003C8811 /* MineModule */ = {
 			isa = PBXGroup;
 			children = (
+				845C70CA1FB15F55009ED54C /* Service */,
 				849977311FB06D0E003C8811 /* Category */,
 				849977301FB06D06003C8811 /* Other */,
 				8499772E1FB06C9A003C8811 /* Actions */,
@@ -279,6 +468,10 @@
 		8499772C1FB06C24003C8811 /* PublicModule */ = {
 			isa = PBXGroup;
 			children = (
+				845C70DB1FB17CC7009ED54C /* Service */,
+				845C70DA1FB17CC3009ED54C /* Other */,
+				845C70D91FB17CBC009ED54C /* Actions */,
+				845C70D81FB17CB3009ED54C /* Category */,
 				845C70B71FB14A20009ED54C /* Controller */,
 			);
 			path = PublicModule;
@@ -296,6 +489,8 @@
 		8499772E1FB06C9A003C8811 /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				845C70C01FB15C6C009ED54C /* Target_Mine.h */,
+				845C70C11FB15C6C009ED54C /* Target_Mine.m */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -306,6 +501,7 @@
 				849977321FB06DA0003C8811 /* BDMineConfigManager.h */,
 				849977331FB06DA0003C8811 /* BDMineConfigManager.m */,
 				849977351FB06E7D003C8811 /* BDMineModuleMacros.h */,
+				845C70BB1FB152ED009ED54C /* BDMineModulePrefix.h */,
 				849977361FB06EB1003C8811 /* BDMineConfigHeader.h */,
 			);
 			path = Other;
@@ -314,6 +510,8 @@
 		849977311FB06D0E003C8811 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				845C70BD1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.h */,
+				845C70BE1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -356,6 +554,7 @@
 		84B0934B1FB0522100B12491 /* BDCoreTool */ = {
 			isa = PBXGroup;
 			children = (
+				845C70C31FB15EC4009ED54C /*  BDNetWork */,
 			);
 			path = BDCoreTool;
 			sourceTree = "<group>";
@@ -363,6 +562,7 @@
 		84B0934C1FB0522900B12491 /* BDMacros */ = {
 			isa = PBXGroup;
 			children = (
+				845C70BC1FB15390009ED54C /* BDCoreMacros.h */,
 			);
 			path = BDMacros;
 			sourceTree = "<group>";
@@ -522,6 +722,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845C70E61FB18289009ED54C /* ImageSource.xcassets in Resources */,
 				8448B8291FB042E900EF1925 /* LaunchScreen.storyboard in Resources */,
 				8448B8261FB042E900EF1925 /* Assets.xcassets in Resources */,
 				8448B8641FB04F0500EF1925 /* Main.storyboard in Resources */,
@@ -600,19 +801,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845C70BF1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.m in Sources */,
 				845C70B31FB14A09009ED54C /* BDHomeViewController.m in Sources */,
 				845C70BA1FB14A34009ED54C /* BDPublicViewController.m in Sources */,
+				845C70D71FB17B17009ED54C /* CTMediator+BDHomeModuleActions.m in Sources */,
 				8499771A1FB0620B003C8811 /* BDLoggerFormatter.m in Sources */,
+				845C70C91FB15F2D009ED54C /* BDBaseRequest.m in Sources */,
 				84B093541FB0528000B12491 /* BDAppDelegate.m in Sources */,
 				849977341FB06DA0003C8811 /* BDMineConfigManager.m in Sources */,
+				845C70F21FB1851D009ED54C /* Target_Order.m in Sources */,
 				84B093571FB052A200B12491 /* BDBaseViewController.m in Sources */,
 				8448B82C1FB042E900EF1925 /* main.m in Sources */,
 				849977201FB06939003C8811 /* BDCYLTabBarControllerConfig.m in Sources */,
+				845C70F51FB18581009ED54C /* CTMediator+BDOrderModuleActions.m in Sources */,
 				845C70B61FB14A1A009ED54C /* BDMineViewController.m in Sources */,
+				845C70CD1FB15F80009ED54C /* BDMineServiceApi.m in Sources */,
 				849977251FB069D4003C8811 /* BDBaseNavigationViewController.m in Sources */,
+				845C70D41FB17A2C009ED54C /* Target_Home.m in Sources */,
+				845C70DE1FB17CE9009ED54C /* Target_Public.m in Sources */,
 				849977121FB06080003C8811 /* BDCoreConfigManager.m in Sources */,
 				849977161FB060C0003C8811 /* BDFileLogger.m in Sources */,
+				845C70C21FB15C6C009ED54C /* Target_Mine.m in Sources */,
+				845C70E11FB17D5E009ED54C /* CTMediator+BDPublicModuleActions.m in Sources */,
 				8448B81E1FB042E900EF1925 /* AppDelegate.m in Sources */,
+				845C70EF1FB184FC009ED54C /* BDOrderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -769,6 +981,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseDemoCore/BaseDemoPrefixHeader.pch";
 				INFOPLIST_FILE = BaseDemoCore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -784,6 +997,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BaseDemoCore/BaseDemoPrefixHeader.pch";
 				INFOPLIST_FILE = BaseDemoCore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

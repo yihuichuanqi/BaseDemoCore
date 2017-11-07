@@ -8,9 +8,9 @@
 
 #import "BDCYLTabBarControllerConfig.h"
 #import "BDBaseNavigationViewController.h"
-#import "BDHomeViewController.h"
-#import "BDMineViewController.h"
-#import "BDPublicViewController.h"
+#import "CTMediator+BDMimeModuleActions.h"
+#import "CTMediator+BDHomeModuleActions.h"
+#import "CTMediator+BDPublicModuleActions.h"
 
 @interface BDCYLTabBarControllerConfig()<UITabBarControllerDelegate>
 
@@ -32,11 +32,11 @@
 
 -(NSArray *)viewControllers
 {
-    BDHomeViewController *homeVC=[[BDHomeViewController alloc]init];
+    UIViewController *homeVC=[[CTMediator sharedInstance] CTMediator_Home_ViewControllerForHome];
     BDBaseNavigationViewController *homeNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:homeVC];
-    BDMineViewController *mineVC=[[BDMineViewController alloc]init];
+    UIViewController *mineVC=[[CTMediator sharedInstance] CTMediator_Mine_ViewControllerForMine];
     BDBaseNavigationViewController *mineNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:mineVC];
-    BDPublicViewController *publicVC=[[BDPublicViewController alloc]init];
+    UIViewController *publicVC=[[CTMediator sharedInstance] CTMediator_Public_ViewControllerForPublic];
     BDBaseNavigationViewController *publicNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:publicVC];
 
     NSArray *viewControllers=@[homeNav,publicNav,mineNav];
@@ -45,11 +45,11 @@
 -(NSArray *)tabBarItemAttributes
 {
     
-    NSDictionary *homeDic=@{CYLTabBarItemTitle:@"首页",CYLTabBarItemImage:@"",CYLTabBarItemSelectedImage:@""};
-    NSDictionary *mineDic=@{CYLTabBarItemTitle:@"我的",CYLTabBarItemImage:@"",CYLTabBarItemSelectedImage:@""};
-    NSDictionary *publicDic=@{CYLTabBarItemTitle:@"发布",CYLTabBarItemImage:@"",CYLTabBarItemSelectedImage:@""};
+    NSDictionary *homeDic=@{CYLTabBarItemTitle:@"首页",CYLTabBarItemImage:@"tab_home_icon",CYLTabBarItemSelectedImage:@"tab_home_click_icon"};
+    NSDictionary *mineDic=@{CYLTabBarItemTitle:@"我的",CYLTabBarItemImage:@"tab_mine_icon",CYLTabBarItemSelectedImage:@"tab_mine_click_icon"};
+    NSDictionary *publicDic=@{CYLTabBarItemTitle:@"发布",CYLTabBarItemImage:@"tab_discovery_icon",CYLTabBarItemSelectedImage:@"tab_discovery_click_icon"};
 
-    NSArray *tabBarItemAttributes=@[homeDic,mineDic,publicDic];
+    NSArray *tabBarItemAttributes=@[homeDic,publicDic,mineDic];
     return tabBarItemAttributes;
 }
 

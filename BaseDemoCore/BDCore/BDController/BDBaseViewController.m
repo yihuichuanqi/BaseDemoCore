@@ -50,6 +50,7 @@
     [self.navigationController setNavigationBarHidden:NO];
     
     //导航背景
+
     if([self respondsToSelector:@selector(backgroundImage)])
     {
         UIImage *bgImage=[self navBackgroundImage];
@@ -98,6 +99,15 @@
     }
 }
 
+#pragma mark-代理
+-(UIImage *)navBackgroundImage
+{
+    return [UIImage imageNamed:@"navigationbar_bg_tall"];
+}
+//-(UIColor *)set_ColorBackground
+//{
+//    return [UIColor colorWithRed:0.3 green:0.8 blue:0.2 alpha:0.9];
+//}
 
 
 #pragma mark-监听通知
@@ -216,7 +226,10 @@
     return isRight;
     
 }
-
+-(UIImage *)set_LeftBarButtonItemWithImage
+{
+    return [UIImage imageNamed:@"ic_back_black"];
+}
 
 #pragma makr-事件
 -(void)left_Click:(id)sender

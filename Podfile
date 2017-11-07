@@ -16,7 +16,8 @@ pod 'YYCache', '~> 1.0.4'
 pod 'RealReachability', '~> 1.1.9'
 pod 'FLEX', '~> 2.4.0'
 pod 'CocoaLumberjack', '~> 3.3.0'
-
+pod 'CTMediator', '~> 12'
+pod 'YTKNetwork', '~> 2.0.4'
 
 end
 
