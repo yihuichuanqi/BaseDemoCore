@@ -50,8 +50,7 @@
     [self.navigationController setNavigationBarHidden:NO];
     
     //导航背景
-
-    if([self respondsToSelector:@selector(backgroundImage)])
+    if([self respondsToSelector:@selector(navBackgroundImage)])
     {
         UIImage *bgImage=[self navBackgroundImage];
         [self setNavigationBackground:bgImage];
@@ -102,7 +101,7 @@
 #pragma mark-代理
 -(UIImage *)navBackgroundImage
 {
-    return [UIImage imageNamed:@"navigationbar_bg_tall"];
+    return [UIImage imageNamed:@"qq"];
 }
 //-(UIColor *)set_ColorBackground
 //{
@@ -158,6 +157,7 @@
     self.navigationController.navigationBar.backgroundColor=[UIColor clearColor];
     [self.navigationController.navigationBar setBackIndicatorTransitionMaskImage:image];
     [self.navigationController.navigationBar setShadowImage:image];
+
 }
 
 -(void)set_Title:(NSMutableAttributedString *)title
@@ -209,7 +209,7 @@
         UIButton *leftBtn=[self set_LeftButton];
         [leftBtn addTarget:self action:@selector(left_Click:) forControlEvents:UIControlEventTouchUpInside];
         UIBarButtonItem *leftItem=[[UIBarButtonItem alloc]initWithCustomView:leftBtn];
-        self.navigationItem.rightBarButtonItem=leftItem;
+        self.navigationItem.leftBarButtonItem=leftItem;
     }
     return isLeft;
 }

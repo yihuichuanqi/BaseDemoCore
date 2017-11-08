@@ -13,4 +13,8 @@
 -(UIViewController *)CTMediator_Home_ViewControllerForHome;
 -(UIViewController *)CTMediator_Home_ViewControllerForHome:(NSDictionary *)params;
 
+
+-(UIViewController *)CTMediator_Home_ViewControllerForHomeList;
+-(UIViewController *)CTMediator_Home_ViewControllerForHomeList:(NSDictionary *)params;
+
 @end

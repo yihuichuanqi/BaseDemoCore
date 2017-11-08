@@ -18,6 +18,8 @@ pod 'FLEX', '~> 2.4.0'
 pod 'CocoaLumberjack', '~> 3.3.0'
 pod 'CTMediator', '~> 12'
 pod 'YTKNetwork', '~> 2.0.4'
+pod 'GVUserDefaults', '~> 1.0.2'
+pod 'MBProgressHUD', '~> 1.0.0'
 
 end
 

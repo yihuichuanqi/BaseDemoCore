@@ -12,5 +12,6 @@
 
 -(UIViewController *)Action_NativePublicViewController:(NSDictionary *)params;
 
+-(UIViewController *)Action_NativePublicDetailViewController:(NSDictionary *)params;
 
 @end

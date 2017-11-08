@@ -11,6 +11,7 @@
 //模块常亮
 NSString *const kCTMediatorTargetHome=@"Home";
 NSString *const kCTMediatorActionNativeHomeViewController=@"NativeHomeViewController";
+NSString *const kCTMediatorActionNativeHomeListViewController=@"NativeHomeListViewController";
 
 @implementation CTMediator (BDHomeModuleActions)
 
@@ -30,4 +31,24 @@ NSString *const kCTMediatorActionNativeHomeViewController=@"NativeHomeViewContro
         return [[UIViewController alloc]init];
     }
 }
+
+-(UIViewController *)CTMediator_Home_ViewControllerForHomeList
+{
+    return [self CTMediator_Home_ViewControllerForHomeList:nil];
+}
+-(UIViewController *)CTMediator_Home_ViewControllerForHomeList:(NSDictionary *)params
+{
+    UIViewController *viewController=[self performTarget:kCTMediatorTargetHome action:kCTMediatorActionNativeHomeListViewController params:params shouldCacheTarget:YES];
+    if ([viewController isKindOfClass:[UIViewController class]])
+    {
+        return viewController;
+    }
+    else
+    {
+        return [[UIViewController alloc]init];
+    }
+}
+
+
+
 @end

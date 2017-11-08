@@ -7,6 +7,7 @@
 //
 
 #import "BDHomeViewController.h"
+#import "CTMediator+BDHomeModuleActions.h"
 
 @interface BDHomeViewController ()
 
@@ -18,8 +19,34 @@
     [super viewDidLoad];
     
     self.view.backgroundColor=[UIColor blueColor];
+    
+    
+    
+    UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"下一页" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    btn.backgroundColor=[UIColor yellowColor];
+    [self.view addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+        make.top.equalTo(self.view).with.offset(74);
+        make.centerX.equalTo(self.view);
+        
+    }];
+
+    
+    
     // Do any additional setup after loading the view.
 }
+
+
+
+-(void)btnClicked:(UIButton *)button
+{
+    UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Home_ViewControllerForHomeList:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

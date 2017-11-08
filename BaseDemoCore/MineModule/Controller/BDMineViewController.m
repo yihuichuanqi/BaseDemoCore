@@ -43,9 +43,6 @@
         
     }];
     
-    
-    
-    
     // Do any additional setup after loading the view.
 }
 -(void)btnClicked:(UIButton *)button

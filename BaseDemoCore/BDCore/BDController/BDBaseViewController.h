@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "RealReachability.h"
+#import "BDCore.h"
 
 @protocol BDBaseViewControllerDataSource<NSObject>
 

@@ -7,6 +7,7 @@
 //
 
 #import "BDBaseViewController.h"
+#import "BDPublicModulePrefix.h"
 
 @interface BDPublicViewController : BDBaseViewController
 

@@ -13,5 +13,9 @@
 -(UIViewController *)CTMediator_Public_ViewControllerForPublic;
 -(UIViewController *)CTMediator_Public_ViewControllerForPublic:(NSDictionary *)params;
 
+-(UIViewController *)CTMediator_Public_ViewControllerForPublicDetail;
+-(UIViewController *)CTMediator_Public_ViewControllerForPublicDetail:(NSDictionary *)params;
+
+
 @end
 

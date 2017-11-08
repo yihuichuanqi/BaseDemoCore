@@ -29,6 +29,19 @@
     return [[NSMutableAttributedString alloc]initWithString:@"订单"];
 }
 
+-(UIButton *)set_RightButton
+{
+    UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@".." forState:UIControlStateNormal];
+    btn.frame=CGRectMake(0, 0, 10, 10);
+    btn.backgroundColor=[UIColor redColor];
+    return btn;
+}
+
+-(void)right_Button_Event:(UIButton *)sender
+{
+    NSLog(@"%@ 订单",[self class]);
+}
 
 
 - (void)didReceiveMemoryWarning {

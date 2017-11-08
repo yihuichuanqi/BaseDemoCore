@@ -7,6 +7,7 @@
 //
 
 #import "BDCoreConfigManager.h"
+#import "BDJSPathHelper.h"
 
 @implementation BDCoreConfigManager
 
@@ -25,7 +26,14 @@
     if (jsPatchMutableArray.count>0)
     {
         NSLog(@"开启热更新服务");
+        BDJSPathHelper *patchHelper=[[BDJSPathHelper alloc]initWithPatchArray:jsPatchMutableArray];
+        [patchHelper loadPatchFile];
+        
+        
+        
     }
+    
+    
 }
 
 

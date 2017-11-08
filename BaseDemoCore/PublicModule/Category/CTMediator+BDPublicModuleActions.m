@@ -11,6 +11,7 @@
 
 NSString *const kCTMediatorTargetPublic=@"Public";
 NSString *const kCTMediatorActionNativePublicController=@"NativePublicViewController";
+NSString *const kCTMediatorActionNativePublicDetailViewController=@"NativePublicDetailViewController";
 
 
 @implementation CTMediator (BDPublicModuleActions)
@@ -31,4 +32,27 @@ NSString *const kCTMediatorActionNativePublicController=@"NativePublicViewContro
         return [[UIViewController alloc]init];
     }
 }
+
+-(UIViewController *)CTMediator_Public_ViewControllerForPublicDetail
+{
+    return [self CTMediator_Public_ViewControllerForPublicDetail:nil];
+}
+-(UIViewController *)CTMediator_Public_ViewControllerForPublicDetail:(NSDictionary *)params
+{
+    UIViewController *viewController=[self performTarget:kCTMediatorTargetPublic action:kCTMediatorActionNativePublicDetailViewController params:params shouldCacheTarget:YES];
+    if ([viewController isKindOfClass:[UIViewController class]])
+    {
+        return viewController;
+    }
+    else
+    {
+        return [[UIViewController alloc]init];
+    }
+}
+
+
+
+
+
+
 @end

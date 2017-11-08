@@ -11,4 +11,6 @@
 @interface Target_Home : NSObject
 
 -(UIViewController *)Action_NativeHomeViewController:(NSDictionary *)params;
+-(UIViewController *)Action_NativeHomeListViewController:(NSDictionary *)params;
+
 @end
