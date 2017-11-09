@@ -8,27 +8,33 @@
 
 #import "MBProgressHUD+BD.h"
 
-#define Chinese_MBProgressHud_System(x) [UIFont fontWithName:@"Heiti SC" size:x]
+//#define Chinese_MBProgressHud_System(x) [UIFont fontWithName:@"Heiti SC" size:x]
+#define Chinese_MBProgressHud_System(x) [UIFont boldSystemFontOfSize:x]
 
 @implementation MBProgressHUD (BD)
 
 +(void)showCustomIcon:(NSString *)iconName Title:(NSString *)title ToView:(UIView *)view
 {
+ 
     if (view==nil)
     {
         view=(UIView *)[UIApplication sharedApplication].delegate.window;
     }
     MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text=title;
-    hud.label.font=Chinese_MBProgressHud_System(15);
-    UIImage *image=[[UIImage imageNamed:iconName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    hud.label.font=Chinese_MBProgressHud_System(16);
+    hud.contentColor=[UIColor whiteColor];
+//    UIImage *image=[[UIImage imageNamed:iconName] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    UIImage *image=[UIImage imageNamed:iconName];
     hud.customView=[[UIImageView alloc]initWithImage:image];
     hud.mode=MBProgressHUDModeCustomView;
     hud.square=YES;
     hud.removeFromSuperViewOnHide=YES;
+    hud.bezelView.style=MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.color=[UIColor colorWithWhite:0.f alpha:0.8f];
     //是否需要蒙版效果
-    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
-    hud.backgroundView.color=[UIColor colorWithWhite:0.f alpha:0.6f];
+//    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
+//    hud.backgroundView.color=[UIColor colorWithWhite:0.f alpha:0.6f];
     //2s消失
     [hud hideAnimated:YES afterDelay:2];
 }
@@ -39,15 +45,15 @@
 }
 +(void)showError:(NSString *)error ToView:(UIView *)view
 {
-    [self showCustomIcon:@"hub_success" Title:error ToView:view];
+    [self showCustomIcon:@"hub_warn" Title:error ToView:view];
 }
 +(void)showInfo:(NSString *)info ToView:(UIView *)view
 {
-    [self showCustomIcon:@"hub_success" Title:info ToView:view];
+    [self showCustomIcon:@"hub-" Title:info ToView:view];
 }
 +(void)showWarn:(NSString *)warn ToView:(UIView *)view
 {
-    [self showCustomIcon:@"hub_success" Title:warn ToView:view];
+    [self showCustomIcon:@"hub_warn" Title:warn ToView:view];
 }
 
 
@@ -68,10 +74,13 @@
     MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text=message;
     hud.mode=model;
-    hud.label.font=Chinese_MBProgressHud_System(15);
+    hud.label.font=Chinese_MBProgressHud_System(18);
+    hud.contentColor=[UIColor whiteColor];
     hud.removeFromSuperViewOnHide=YES;
-    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
-    hud.backgroundView.color=[UIColor colorWithWhite:0.f alpha:0.6f];
+    hud.bezelView.style=MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.color=[UIColor colorWithWhite:0.f alpha:0.8f];
+//    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
+//    hud.backgroundView.color=[UIColor colorWithWhite:0.f alpha:0.6f];
     [hud hideAnimated:YES afterDelay:timel];
 }
 
@@ -94,10 +103,13 @@
     MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.mode=MBProgressHUDModeText;
     hud.label.text=message;
-    hud.label.font=Chinese_MBProgressHud_System(15);
+    hud.label.font=Chinese_MBProgressHud_System(18);
+    hud.contentColor=[UIColor whiteColor];
     hud.removeFromSuperViewOnHide=YES;
-    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
-    hud.backgroundView.color=[UIColor colorWithWhite:0.f alpha:0.6f];
+    hud.bezelView.style=MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.color=[UIColor colorWithWhite:0.f alpha:0.8f];
+//    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
+//    hud.backgroundView.color=[UIColor colorWithWhite:0.f alpha:0.6f];
     return hud;
 }
 +(void)showLoadToView:(UIView *)view
@@ -112,9 +124,12 @@
     }
     MBProgressHUD *hud=[MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.label.text=text;
-    hud.label.font=Chinese_MBProgressHud_System(15);
-    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
-    hud.backgroundView.backgroundColor=[UIColor colorWithWhite:0.f alpha:0.1f];
+    hud.label.font=Chinese_MBProgressHud_System(18);
+    hud.contentColor=[UIColor whiteColor];
+    hud.bezelView.style=MBProgressHUDBackgroundStyleSolidColor;
+    hud.bezelView.color=[UIColor colorWithWhite:0.f alpha:0.8f];
+//    hud.backgroundView.style=MBProgressHUDBackgroundStyleSolidColor;
+//    hud.backgroundView.backgroundColor=[UIColor colorWithWhite:0.f alpha:0.1f];
     return hud;
 }
 

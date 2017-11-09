@@ -69,13 +69,10 @@ AspectPatch(-, void, application:(UIApplication *)application didReceiveRemoteNo
         [self receiveRemoteMessageHandler:dic];
     }
     completionHandler(UIBackgroundFetchResultNewData);
-    return XAMessageForward(application:application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:^(UIBackgroundFetchResult result) {
-        
-    });
+    return XAMessageForward(application:application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void(^)(UIBackgroundFetchResult result))completionHandler);
 }
 //ios 10 点击通知进入app触发
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-
 
 #endif
 
@@ -86,8 +83,11 @@ AspectPatch(-, void, dealloc)
 
 -(void)initLoadJPush:(NSDictionary *)launchOptions
 {
+    //配置极光
     //注册APNS
-    
+    [self registerUserNotification];
+    //处理远程通知启动APP
+    [self receiveNotificationByLaunchingOptions:launchOptions];
     
 }
 #pragma mark-用户通知（推送）自定义方法

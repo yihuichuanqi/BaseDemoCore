@@ -20,6 +20,9 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#import <Toast/UIView+Toast.h>
+#import "MBProgressHUD+BD.h"
+
 #endif
 
 

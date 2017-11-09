@@ -14,6 +14,8 @@
 		8448B8361FB042E900EF1925 /* BaseDemoCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448B8351FB042E900EF1925 /* BaseDemoCoreTests.m */; };
 		8448B8411FB042E900EF1925 /* BaseDemoCoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448B8401FB042E900EF1925 /* BaseDemoCoreUITests.m */; };
 		8448B8641FB04F0500EF1925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448B8631FB04F0500EF1925 /* Main.storyboard */; };
+		845B98131FB3FBFF002A80ED /* BDShareMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B98121FB3FBFF002A80ED /* BDShareMenuView.m */; };
+		845B98181FB404F4002A80ED /* BDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B98171FB404F4002A80ED /* BDAlertView.m */; };
 		845C70B31FB14A09009ED54C /* BDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B21FB14A09009ED54C /* BDHomeViewController.m */; };
 		845C70B61FB14A1A009ED54C /* BDMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B51FB14A1A009ED54C /* BDMineViewController.m */; };
 		845C70BA1FB14A34009ED54C /* BDPublicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B91FB14A34009ED54C /* BDPublicViewController.m */; };
@@ -248,7 +250,6 @@
 		846770611FB31336001B392D /* UIView+Recursion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F671FB31336001B392D /* UIView+Recursion.m */; };
 		846770621FB31336001B392D /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F691FB31336001B392D /* UIView+Screenshot.m */; };
 		846770631FB31336001B392D /* UIView+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F6B1FB31336001B392D /* UIView+Shake.m */; };
-		846770641FB31336001B392D /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F6D1FB31336001B392D /* UIView+Toast.m */; };
 		846770651FB31336001B392D /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F6F1FB31336001B392D /* UIView+ViewController.m */; };
 		846770661FB31336001B392D /* UIView+Visuals.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F711FB31336001B392D /* UIView+Visuals.m */; };
 		846770671FB31336001B392D /* UIViewController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676F741FB31336001B392D /* UIViewController+BackButtonHandler.m */; };
@@ -314,6 +315,10 @@
 		8448B8401FB042E900EF1925 /* BaseDemoCoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemoCoreUITests.m; sourceTree = "<group>"; };
 		8448B8421FB042E900EF1925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8448B8631FB04F0500EF1925 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		845B98111FB3FBFF002A80ED /* BDShareMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDShareMenuView.h; sourceTree = "<group>"; };
+		845B98121FB3FBFF002A80ED /* BDShareMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDShareMenuView.m; sourceTree = "<group>"; };
+		845B98161FB404F4002A80ED /* BDAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAlertView.h; sourceTree = "<group>"; };
+		845B98171FB404F4002A80ED /* BDAlertView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAlertView.m; sourceTree = "<group>"; };
 		845C70B11FB14A09009ED54C /* BDHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDHomeViewController.h; sourceTree = "<group>"; };
 		845C70B21FB14A09009ED54C /* BDHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDHomeViewController.m; sourceTree = "<group>"; };
 		845C70B41FB14A1A009ED54C /* BDMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMineViewController.h; sourceTree = "<group>"; };
@@ -789,8 +794,6 @@
 		84676F691FB31336001B392D /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
 		84676F6A1FB31336001B392D /* UIView+Shake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Shake.h"; sourceTree = "<group>"; };
 		84676F6B1FB31336001B392D /* UIView+Shake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shake.m"; sourceTree = "<group>"; };
-		84676F6C1FB31336001B392D /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
-		84676F6D1FB31336001B392D /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		84676F6E1FB31336001B392D /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
 		84676F6F1FB31336001B392D /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		84676F701FB31336001B392D /* UIView+Visuals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Visuals.h"; sourceTree = "<group>"; };
@@ -951,6 +954,22 @@
 				8448B8421FB042E900EF1925 /* Info.plist */,
 			);
 			path = BaseDemoCoreUITests;
+			sourceTree = "<group>";
+		};
+		845B98141FB404C6002A80ED /* BDSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BDSearchBar;
+			sourceTree = "<group>";
+		};
+		845B98151FB404CE002A80ED /* BDAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				845B98161FB404F4002A80ED /* BDAlertView.h */,
+				845B98171FB404F4002A80ED /* BDAlertView.m */,
+			);
+			path = BDAlertView;
 			sourceTree = "<group>";
 		};
 		845C70B01FB149DD009ED54C /* Controller */ = {
@@ -1159,6 +1178,8 @@
 				84676D711FB2F782001B392D /* BDWebShareHelper.m */,
 				84676D731FB2FC63001B392D /* BDSharePlatformHelper.h */,
 				84676D741FB2FC63001B392D /* BDSharePlatformHelper.m */,
+				845B98111FB3FBFF002A80ED /* BDShareMenuView.h */,
+				845B98121FB3FBFF002A80ED /* BDShareMenuView.m */,
 				84676D761FB2FC80001B392D /* BDShareTool.h */,
 				84676D771FB2FC80001B392D /* BDShareTool.m */,
 				84676D821FB300C2001B392D /* BDShare.h */,
@@ -2128,8 +2149,6 @@
 				84676F691FB31336001B392D /* UIView+Screenshot.m */,
 				84676F6A1FB31336001B392D /* UIView+Shake.h */,
 				84676F6B1FB31336001B392D /* UIView+Shake.m */,
-				84676F6C1FB31336001B392D /* UIView+Toast.h */,
-				84676F6D1FB31336001B392D /* UIView+Toast.m */,
 				84676F6E1FB31336001B392D /* UIView+ViewController.h */,
 				84676F6F1FB31336001B392D /* UIView+ViewController.m */,
 				84676F701FB31336001B392D /* UIView+Visuals.h */,
@@ -2400,6 +2419,8 @@
 		84B0934E1FB0523C00B12491 /* BDUI */ = {
 			isa = PBXGroup;
 			children = (
+				845B98151FB404CE002A80ED /* BDAlertView */,
+				845B98141FB404C6002A80ED /* BDSearchBar */,
 			);
 			path = BDUI;
 			sourceTree = "<group>";
@@ -2625,7 +2646,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846770641FB31336001B392D /* UIView+Toast.m in Sources */,
 				846770721FB31336001B392D /* UIWebView+Canvas.m in Sources */,
 				846770581FB31336001B392D /* UIView+Constraints.m in Sources */,
 				845C70BF1FB15ADF009ED54C /* CTMediator+BDMimeModuleActions.m in Sources */,
@@ -2689,6 +2709,7 @@
 				846770201FB31336001B392D /* UIImage+FileName.m in Sources */,
 				84676FA21FB31336001B392D /* NSPersistentStoreCoordinator+Custom.m in Sources */,
 				84676FED1FB31336001B392D /* NSTimer+Addition.m in Sources */,
+				845B98131FB3FBFF002A80ED /* BDShareMenuView.m in Sources */,
 				846770601FB31336001B392D /* UIView+Nib.m in Sources */,
 				846770351FB31336001B392D /* UINavigationController+BATransitions.m in Sources */,
 				8467705B1FB31336001B392D /* UIView+draggable.m in Sources */,
@@ -2765,6 +2786,7 @@
 				84676FFE1FB31336001B392D /* UIApplication+KeyboardFrame.m in Sources */,
 				84676FAF1FB31336001B392D /* NSData+SDDataCache.m in Sources */,
 				84676FA31FB31336001B392D /* CLLocation+CH1903.m in Sources */,
+				845B98181FB404F4002A80ED /* BDAlertView.m in Sources */,
 				8467706D1FB31336001B392D /* UIViewController+StoreKit.m in Sources */,
 				846770361FB31336001B392D /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				845C70CD1FB15F80009ED54C /* BDMineServiceApi.m in Sources */,

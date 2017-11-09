@@ -35,16 +35,6 @@ AspectPatch(-, BOOL, application:(UIApplication *)application didFinishLaunching
     }
     return XAMessageForward(application:application didFinishLaunchingWithOptions:launchOptions);
 }
-AspectPatch(-, BOOL, application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options)
-{
-    BOOL result=YES;
-    if(!result)
-    {
-        
-    }
-    return result;
-}
-
 
 
 

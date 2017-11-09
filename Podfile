@@ -20,6 +20,8 @@ pod 'CTMediator', '~> 12'
 pod 'YTKNetwork', '~> 2.0.4'
 pod 'GVUserDefaults', '~> 1.0.2'
 pod 'MBProgressHUD', '~> 1.0.0'
+pod 'SCLAlertView-Objective-C', '~> 1.1.2'
+pod 'Toast', '~> 3.1.0'
 
 end
 

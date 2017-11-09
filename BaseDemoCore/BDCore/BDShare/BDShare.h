@@ -9,5 +9,7 @@
 #ifndef BDShare_h
 #define BDShare_h
 
+#import "BDCoreMacros.h"
+#import "BDShareMenuView.h"
 
 #endif /* BDShare_h */

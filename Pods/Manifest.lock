@@ -40,9 +40,11 @@ PODS:
     - RealReachability/Ping (= 1.1.9)
   - RealReachability/Connection (1.1.9)
   - RealReachability/Ping (1.1.9)
+  - SCLAlertView-Objective-C (1.1.2)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
+  - Toast (3.1.0)
   - XAspect (1.0.5):
     - XAspect/Core (= 1.0.5)
     - XAspect/Macros (= 1.0.5)
@@ -66,7 +68,9 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - ReactiveCocoa (~> 2.5)
   - RealReachability (~> 1.1.9)
+  - SCLAlertView-Objective-C (~> 1.1.2)
   - SDWebImage (~> 3.7.5)
+  - Toast (~> 3.1.0)
   - XAspect (~> 1.0.5)
   - YTKNetwork (~> 2.0.4)
   - YYCache (~> 1.0.4)
@@ -84,11 +88,13 @@ SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
+  SCLAlertView-Objective-C: 0e54351fa4f98a5c7c6ad3727e6dbb46784534e5
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 62cbc6e8682a8990ad0d3a7ccc49ec7406081885
+PODFILE CHECKSUM: 9ad654435c8d0c169ba62893192b3f1403cc2f5c
 
 COCOAPODS: 1.3.1

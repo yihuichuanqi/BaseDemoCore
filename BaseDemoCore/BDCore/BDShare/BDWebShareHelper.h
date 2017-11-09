@@ -9,6 +9,23 @@
 #import <Foundation/Foundation.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 
+/*
+ 
+ // 通过模型调用方法，这种方式更好些。
+ JiaWebShareHelper *shareHelper  = [[JiaWebShareHelper alloc] init];
+ self.jsContext[@"jia"] = shareHelper;
+ shareHelper.jsContext = self.jsContext;
+ shareHelper.webView = self.webView;
+ 
+ self.jsContext.exceptionHandler = ^(JSContext *context, JSValue *exceptionValue) {
+ context.exception = exceptionValue;
+ NSLog(@"异常信息：%@", exceptionValue);
+ };
+ 
+ */
+
+
+
 @protocol BDWebShareHelperDelegate<JSExport>
 
 //纯文本
