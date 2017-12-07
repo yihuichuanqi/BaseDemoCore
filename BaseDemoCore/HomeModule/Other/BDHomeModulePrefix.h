@@ -15,6 +15,5 @@
 #import "BDBaseViewController.h"
 #import "BDMineMuduleMacros.h"
 
-#import "MBProgressHUD+BD.h"
 
 #endif /* BDHomeModulePrefix_h */

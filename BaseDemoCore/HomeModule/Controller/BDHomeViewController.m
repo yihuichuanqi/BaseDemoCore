@@ -8,7 +8,7 @@
 
 #import "BDHomeViewController.h"
 #import "CTMediator+BDHomeModuleActions.h"
-
+#import "BDProgressHud.h"
 static NSString *kTosatView=@"Toast显示";
 static NSString *kMBProgressView=@"MBProgress显示";
 
@@ -45,6 +45,8 @@ static NSString *kMBProgressView=@"MBProgress显示";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self.navigationView setTitle:@"首页"];
+    
     self.view.backgroundColor=[UIColor blueColor];
 
     //设置Toast不多次显示
@@ -53,7 +55,9 @@ static NSString *kMBProgressView=@"MBProgress显示";
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
        
-        make.edges.equalTo(self.view);
+        UIEdgeInsets edge=UIEdgeInsetsMake(self.navigationView.navHeigth, 0, 0, 0);
+        
+        make.edges.mas_equalTo(edge);
     }];
     
     
@@ -70,9 +74,23 @@ static NSString *kMBProgressView=@"MBProgress显示";
 }
 -(void)btnClicked:(UIButton *)button
 {
-    [MBProgressHUD hideHudForView:self.view];
-//    UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Home_ViewControllerForHomeList:nil];
-//    [self.navigationController pushViewController:viewController animated:YES];
+    
+//    [LEEAlert alert].config
+//                    .LeeTitle(@"标题")
+//                    .LeeContent(@"内容内容内容\n内容内容内容内容内容\n内容xf内容\n")
+//                    .LeeCancelAction(@"去喜爱", ^{
+//        
+//                    })
+//                    .LeeAction(@"却惹", ^{
+//        
+//                    })
+//    .LeeShow();
+//    
+//    
+//    
+//    return;
+    UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Home_ViewControllerForHomeList:nil];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 
@@ -106,9 +124,7 @@ static NSString *kMBProgressView=@"MBProgress显示";
     }
     else if ([cellString isEqualToString:kMBProgressView])
     {
-        [MBProgressHUD showWarn:@"系统繁忙，请稍后重试" ToView:self.view];
-//        [MBProgressHUD showProgressToView:self.view ToText:@"加载中..."];
-//        [MBProgressHUD showLoadToView:self.tabBarController.view];
+        [BDProgressHud showAutoMessage:@"滋滋滋滋" ToView:nil];
     }
 }
 

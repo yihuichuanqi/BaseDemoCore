@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840FE1EE1FD558B000AA9CCD /* XTSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FE1ED1FD558B000AA9CCD /* XTSegmentControl.m */; };
+		841F7E621FBC0BBE00CD12AC /* YZInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F7E611FBC0BBE00CD12AC /* YZInputView.m */; };
+		841F7E671FBC1D7C00CD12AC /* BDInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F7E661FBC1D7C00CD12AC /* BDInputTableViewCell.m */; };
+		841F7E6A1FBC427A00CD12AC /* BDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F7E691FBC427A00CD12AC /* BDTextField.m */; };
 		8448B81E1FB042E900EF1925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448B81D1FB042E900EF1925 /* AppDelegate.m */; };
 		8448B8261FB042E900EF1925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448B8251FB042E900EF1925 /* Assets.xcassets */; };
 		8448B8291FB042E900EF1925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448B8271FB042E900EF1925 /* LaunchScreen.storyboard */; };
@@ -14,6 +18,7 @@
 		8448B8361FB042E900EF1925 /* BaseDemoCoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448B8351FB042E900EF1925 /* BaseDemoCoreTests.m */; };
 		8448B8411FB042E900EF1925 /* BaseDemoCoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448B8401FB042E900EF1925 /* BaseDemoCoreUITests.m */; };
 		8448B8641FB04F0500EF1925 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448B8631FB04F0500EF1925 /* Main.storyboard */; };
+		84570F0D1FB98D6A00647C64 /* BDProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 84570F0C1FB98D6A00647C64 /* BDProgressHud.m */; };
 		845B98131FB3FBFF002A80ED /* BDShareMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B98121FB3FBFF002A80ED /* BDShareMenuView.m */; };
 		845B98181FB404F4002A80ED /* BDAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 845B98171FB404F4002A80ED /* BDAlertView.m */; };
 		845C70B31FB14A09009ED54C /* BDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C70B21FB14A09009ED54C /* BDHomeViewController.m */; };
@@ -35,7 +40,6 @@
 		84676D4F1FB29CD6001B392D /* BDHomeConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D4E1FB29CD6001B392D /* BDHomeConfigManager.m */; };
 		84676D521FB2A125001B392D /* BDPublicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D511FB2A125001B392D /* BDPublicDetailViewController.m */; };
 		84676D551FB2A17D001B392D /* BDPublicConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D541FB2A17D001B392D /* BDPublicConfigManager.m */; };
-		84676D5D1FB2B3EE001B392D /* MBProgressHUD+BD.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D5C1FB2B3EE001B392D /* MBProgressHUD+BD.m */; };
 		84676D611FB2D9AB001B392D /* BDJSPathModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D601FB2D9AB001B392D /* BDJSPathModel.m */; };
 		84676D641FB2DC07001B392D /* BDJSPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D631FB2DC07001B392D /* BDJSPathHelper.m */; };
 		84676D6A1FB2EEF8001B392D /* BDShareConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84676D691FB2EEF8001B392D /* BDShareConfigManager.m */; };
@@ -279,6 +283,17 @@
 		849977341FB06DA0003C8811 /* BDMineConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 849977331FB06DA0003C8811 /* BDMineConfigManager.m */; };
 		84B093541FB0528000B12491 /* BDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B093531FB0528000B12491 /* BDAppDelegate.m */; };
 		84B093571FB052A200B12491 /* BDBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B093561FB052A200B12491 /* BDBaseViewController.m */; };
+		84E4FDD51FD131B400125E83 /* BDHomeListTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E4FDD41FD131B400125E83 /* BDHomeListTableCell.m */; };
+		84E586F41FCBBB4C00283927 /* HTLinkLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E586F31FCBBB4C00283927 /* HTLinkLabel.m */; };
+		84E586F71FCBBB6000283927 /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E586F61FCBBB6000283927 /* LabelCell.m */; };
+		84E586FA1FCBBB7C00283927 /* BDLinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E586F91FCBBB7C00283927 /* BDLinkViewController.m */; };
+		84E92DF61FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DE71FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.m */; };
+		84E92DF71FD1254C003E4FEB /* UIButton+YXJEdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DE91FD1254C003E4FEB /* UIButton+YXJEdgeInsets.m */; };
+		84E92DF81FD1254C003E4FEB /* YXJSwipeCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DEB1FD1254C003E4FEB /* YXJSwipeCellScrollView.m */; };
+		84E92DF91FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DED1FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.m */; };
+		84E92DFA1FD1254C003E4FEB /* YXJSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DEF1FD1254C003E4FEB /* YXJSwipeTableViewCell.m */; };
+		84E92DFB1FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DF21FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m */; };
+		84E92DFC1FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DF41FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m */; };
 		F83CFD02F2E5EEEFDD72D37D /* libPods-BaseDemoCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C966EDBD4F2D6340577BE308 /* libPods-BaseDemoCore.a */; };
 /* End PBXBuildFile section */
 
@@ -301,6 +316,14 @@
 
 /* Begin PBXFileReference section */
 		3FD5BC37B28166679FF300D8 /* Pods-BaseDemoCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseDemoCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseDemoCore/Pods-BaseDemoCore.release.xcconfig"; sourceTree = "<group>"; };
+		840FE1EC1FD558B000AA9CCD /* XTSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSegmentControl.h; sourceTree = "<group>"; };
+		840FE1ED1FD558B000AA9CCD /* XTSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSegmentControl.m; sourceTree = "<group>"; };
+		841F7E601FBC0BBE00CD12AC /* YZInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZInputView.h; sourceTree = "<group>"; };
+		841F7E611FBC0BBE00CD12AC /* YZInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZInputView.m; sourceTree = "<group>"; };
+		841F7E651FBC1D7C00CD12AC /* BDInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDInputTableViewCell.h; sourceTree = "<group>"; };
+		841F7E661FBC1D7C00CD12AC /* BDInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDInputTableViewCell.m; sourceTree = "<group>"; };
+		841F7E681FBC427A00CD12AC /* BDTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTextField.h; sourceTree = "<group>"; };
+		841F7E691FBC427A00CD12AC /* BDTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTextField.m; sourceTree = "<group>"; };
 		8448B8191FB042E900EF1925 /* BaseDemoCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseDemoCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448B81C1FB042E900EF1925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8448B81D1FB042E900EF1925 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -315,6 +338,8 @@
 		8448B8401FB042E900EF1925 /* BaseDemoCoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseDemoCoreUITests.m; sourceTree = "<group>"; };
 		8448B8421FB042E900EF1925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8448B8631FB04F0500EF1925 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		84570F0B1FB98D6A00647C64 /* BDProgressHud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDProgressHud.h; sourceTree = "<group>"; };
+		84570F0C1FB98D6A00647C64 /* BDProgressHud.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDProgressHud.m; sourceTree = "<group>"; };
 		845B98111FB3FBFF002A80ED /* BDShareMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDShareMenuView.h; sourceTree = "<group>"; };
 		845B98121FB3FBFF002A80ED /* BDShareMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDShareMenuView.m; sourceTree = "<group>"; };
 		845B98161FB404F4002A80ED /* BDAlertView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAlertView.h; sourceTree = "<group>"; };
@@ -366,8 +391,6 @@
 		84676D571FB2A1B0001B392D /* BDPublicModulePrefix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPublicModulePrefix.h; sourceTree = "<group>"; };
 		84676D581FB2A1C7001B392D /* BDPublicConfigHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDPublicConfigHeader.h; sourceTree = "<group>"; };
 		84676D591FB2AC9D001B392D /* BDCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDCore.h; sourceTree = "<group>"; };
-		84676D5B1FB2B3EE001B392D /* MBProgressHUD+BD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+BD.h"; sourceTree = "<group>"; };
-		84676D5C1FB2B3EE001B392D /* MBProgressHUD+BD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+BD.m"; sourceTree = "<group>"; };
 		84676D5F1FB2D9AB001B392D /* BDJSPathModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDJSPathModel.h; sourceTree = "<group>"; };
 		84676D601FB2D9AB001B392D /* BDJSPathModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDJSPathModel.m; sourceTree = "<group>"; };
 		84676D621FB2DC07001B392D /* BDJSPathHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDJSPathHelper.h; sourceTree = "<group>"; };
@@ -855,6 +878,29 @@
 		84B093531FB0528000B12491 /* BDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppDelegate.m; sourceTree = "<group>"; };
 		84B093551FB052A200B12491 /* BDBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBaseViewController.h; sourceTree = "<group>"; };
 		84B093561FB052A200B12491 /* BDBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBaseViewController.m; sourceTree = "<group>"; };
+		84E4FDD31FD131B400125E83 /* BDHomeListTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDHomeListTableCell.h; sourceTree = "<group>"; };
+		84E4FDD41FD131B400125E83 /* BDHomeListTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDHomeListTableCell.m; sourceTree = "<group>"; };
+		84E586F21FCBBB4C00283927 /* HTLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTLinkLabel.h; sourceTree = "<group>"; };
+		84E586F31FCBBB4C00283927 /* HTLinkLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTLinkLabel.m; sourceTree = "<group>"; };
+		84E586F51FCBBB5F00283927 /* LabelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelCell.h; sourceTree = "<group>"; };
+		84E586F61FCBBB6000283927 /* LabelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
+		84E586F81FCBBB7C00283927 /* BDLinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDLinkViewController.h; sourceTree = "<group>"; };
+		84E586F91FCBBB7C00283927 /* BDLinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDLinkViewController.m; sourceTree = "<group>"; };
+		84E92DE61FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+YXJSwipeUtilityButtons.h"; sourceTree = "<group>"; };
+		84E92DE71FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+YXJSwipeUtilityButtons.m"; sourceTree = "<group>"; };
+		84E92DE81FD1254C003E4FEB /* UIButton+YXJEdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+YXJEdgeInsets.h"; sourceTree = "<group>"; };
+		84E92DE91FD1254C003E4FEB /* UIButton+YXJEdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YXJEdgeInsets.m"; sourceTree = "<group>"; };
+		84E92DEA1FD1254C003E4FEB /* YXJSwipeCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeCellScrollView.h; sourceTree = "<group>"; };
+		84E92DEB1FD1254C003E4FEB /* YXJSwipeCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeCellScrollView.m; sourceTree = "<group>"; };
+		84E92DEC1FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		84E92DED1FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		84E92DEE1FD1254C003E4FEB /* YXJSwipeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeTableViewCell.h; sourceTree = "<group>"; };
+		84E92DEF1FD1254C003E4FEB /* YXJSwipeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeTableViewCell.m; sourceTree = "<group>"; };
+		84E92DF01FD1254C003E4FEB /* YXJSwipeTableViewCell_iOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeTableViewCell_iOS.h; sourceTree = "<group>"; };
+		84E92DF11FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		84E92DF21FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		84E92DF31FD1254C003E4FEB /* YXJSwipeUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeUtilityButtonView.h; sourceTree = "<group>"; };
+		84E92DF41FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeUtilityButtonView.m; sourceTree = "<group>"; };
 		9FEEC8FAEC3E53BEE0B08439 /* Pods-BaseDemoCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseDemoCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseDemoCore/Pods-BaseDemoCore.debug.xcconfig"; sourceTree = "<group>"; };
 		C966EDBD4F2D6340577BE308 /* libPods-BaseDemoCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseDemoCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -894,6 +940,44 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		840FE1EB1FD558B000AA9CCD /* XTSegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				840FE1EC1FD558B000AA9CCD /* XTSegmentControl.h */,
+				840FE1ED1FD558B000AA9CCD /* XTSegmentControl.m */,
+			);
+			path = XTSegmentControl;
+			sourceTree = "<group>";
+		};
+		841F7E5F1FBC0BBE00CD12AC /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				841F7E601FBC0BBE00CD12AC /* YZInputView.h */,
+				841F7E611FBC0BBE00CD12AC /* YZInputView.m */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
+		841F7E641FBC1D0F00CD12AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				841F7E651FBC1D7C00CD12AC /* BDInputTableViewCell.h */,
+				841F7E661FBC1D7C00CD12AC /* BDInputTableViewCell.m */,
+				841F7E681FBC427A00CD12AC /* BDTextField.h */,
+				841F7E691FBC427A00CD12AC /* BDTextField.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8447060C1FBA92E80019EEDB /* BDVendors */ = {
+			isa = PBXGroup;
+			children = (
+				840FE1EB1FD558B000AA9CCD /* XTSegmentControl */,
+				841F7E5F1FBC0BBE00CD12AC /* InputView */,
+			);
+			path = BDVendors;
+			sourceTree = "<group>";
+		};
 		8448B8101FB042E900EF1925 = {
 			isa = PBXGroup;
 			children = (
@@ -919,8 +1003,14 @@
 		8448B81B1FB042E900EF1925 /* BaseDemoCore */ = {
 			isa = PBXGroup;
 			children = (
+				84E92DE41FD1254C003E4FEB /* YXJSwipeTableViewCell_iOS */,
 				8448B81C1FB042E900EF1925 /* AppDelegate.h */,
 				8448B81D1FB042E900EF1925 /* AppDelegate.m */,
+				84E586F51FCBBB5F00283927 /* LabelCell.h */,
+				84E586F61FCBBB6000283927 /* LabelCell.m */,
+				84E586F81FCBBB7C00283927 /* BDLinkViewController.h */,
+				84E586F91FCBBB7C00283927 /* BDLinkViewController.m */,
+				84E586F11FCBBB4C00283927 /* HTLinkLabel */,
 				845C70E21FB17EDB009ED54C /* BaseDemoPrefixHeader.pch */,
 				845C70E71FB184BA009ED54C /* OrderModule */,
 				845C70E41FB18264009ED54C /* Resources */,
@@ -1150,8 +1240,8 @@
 		84676D5A1FB2B3BB001B392D /* BDMbProgressHud */ = {
 			isa = PBXGroup;
 			children = (
-				84676D5B1FB2B3EE001B392D /* MBProgressHUD+BD.h */,
-				84676D5C1FB2B3EE001B392D /* MBProgressHUD+BD.m */,
+				84570F0B1FB98D6A00647C64 /* BDProgressHud.h */,
+				84570F0C1FB98D6A00647C64 /* BDProgressHud.m */,
 			);
 			path = BDMbProgressHud;
 			sourceTree = "<group>";
@@ -2274,6 +2364,7 @@
 		8499772A1FB06C0F003C8811 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
+				84E4FDD21FD1318C00125E83 /* View */,
 				845C70D11FB178A4009ED54C /* Service */,
 				845C70D01FB1789F009ED54C /* Other */,
 				845C70CF1FB17898009ED54C /* Actions */,
@@ -2298,6 +2389,7 @@
 		8499772C1FB06C24003C8811 /* PublicModule */ = {
 			isa = PBXGroup;
 			children = (
+				841F7E641FBC1D0F00CD12AC /* View */,
 				845C70DB1FB17CC7009ED54C /* Service */,
 				845C70DA1FB17CC3009ED54C /* Other */,
 				845C70D91FB17CBC009ED54C /* Actions */,
@@ -2349,6 +2441,7 @@
 		84B093481FB0520300B12491 /* BDCore */ = {
 			isa = PBXGroup;
 			children = (
+				8447060C1FBA92E80019EEDB /* BDVendors */,
 				84676D671FB2EE97001B392D /* BDAnalytics */,
 				84676D661FB2EE7F001B392D /* BDRemoteNoti */,
 				84676D651FB2EE75001B392D /* BDShare */,
@@ -2446,6 +2539,46 @@
 			children = (
 			);
 			path = BDTool;
+			sourceTree = "<group>";
+		};
+		84E4FDD21FD1318C00125E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84E4FDD31FD131B400125E83 /* BDHomeListTableCell.h */,
+				84E4FDD41FD131B400125E83 /* BDHomeListTableCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84E586F11FCBBB4C00283927 /* HTLinkLabel */ = {
+			isa = PBXGroup;
+			children = (
+				84E586F21FCBBB4C00283927 /* HTLinkLabel.h */,
+				84E586F31FCBBB4C00283927 /* HTLinkLabel.m */,
+			);
+			path = HTLinkLabel;
+			sourceTree = "<group>";
+		};
+		84E92DE41FD1254C003E4FEB /* YXJSwipeTableViewCell_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				84E92DE61FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.h */,
+				84E92DE71FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.m */,
+				84E92DE81FD1254C003E4FEB /* UIButton+YXJEdgeInsets.h */,
+				84E92DE91FD1254C003E4FEB /* UIButton+YXJEdgeInsets.m */,
+				84E92DEA1FD1254C003E4FEB /* YXJSwipeCellScrollView.h */,
+				84E92DEB1FD1254C003E4FEB /* YXJSwipeCellScrollView.m */,
+				84E92DEC1FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.h */,
+				84E92DED1FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.m */,
+				84E92DEE1FD1254C003E4FEB /* YXJSwipeTableViewCell.h */,
+				84E92DEF1FD1254C003E4FEB /* YXJSwipeTableViewCell.m */,
+				84E92DF01FD1254C003E4FEB /* YXJSwipeTableViewCell_iOS.h */,
+				84E92DF11FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.h */,
+				84E92DF21FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m */,
+				84E92DF31FD1254C003E4FEB /* YXJSwipeUtilityButtonView.h */,
+				84E92DF41FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m */,
+			);
+			path = YXJSwipeTableViewCell_iOS;
 			sourceTree = "<group>";
 		};
 		93CAB7CA2326FB02997C2947 /* Frameworks */ = {
@@ -2612,9 +2745,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BaseDemoCore/Pods-BaseDemoCore-resources.sh",
+				"${PODS_ROOT}/EasyNavigation/EasyNavigation/EasyNavButton.bundle",
+				$PODS_CONFIGURATION_BUILD_DIR/SCNavigationControlCenter/SCNavigationControlCenter.bundle,
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2654,18 +2791,21 @@
 				84676FB21FB31336001B392D /* NSDate+Extension.m in Sources */,
 				84676FDF1FB31336001B392D /* NSString+Encrypt.m in Sources */,
 				846770181FB31336001B392D /* UIFont+WDCustomLoader.m in Sources */,
+				84E92DFC1FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m in Sources */,
 				84676FE11FB31336001B392D /* NSString+Matcher.m in Sources */,
 				846770651FB31336001B392D /* UIView+ViewController.m in Sources */,
 				846770681FB31336001B392D /* UIViewController+BackButtonItemTitle.m in Sources */,
 				84676FF91FB31336001B392D /* CAMediaTimingFunction+AdditionalEquations.m in Sources */,
 				846770191FB31336001B392D /* UIFont-TTF.m in Sources */,
 				845C70B31FB14A09009ED54C /* BDHomeViewController.m in Sources */,
+				84E92DF81FD1254C003E4FEB /* YXJSwipeCellScrollView.m in Sources */,
 				846770611FB31336001B392D /* UIView+Recursion.m in Sources */,
 				846770311FB31336001B392D /* UILabel+AutoSize.m in Sources */,
 				846770071FB31336001B392D /* UIButton+BackgroundColor.m in Sources */,
 				846770671FB31336001B392D /* UIViewController+BackButtonHandler.m in Sources */,
 				84676FD31FB31336001B392D /* NSObject+GCD.m in Sources */,
 				84676FD51FB31336001B392D /* NSObject+MKBlockTimer.m in Sources */,
+				84E586F71FCBBB6000283927 /* LabelCell.m in Sources */,
 				84676FF61FB31336001B392D /* CAAnimation+Blocks.m in Sources */,
 				8467700A1FB31336001B392D /* UIButton+Indicator.m in Sources */,
 				846770741FB31336001B392D /* UIWebView+Load.m in Sources */,
@@ -2682,6 +2822,8 @@
 				846770781FB31336001B392D /* WebView+Debug.m in Sources */,
 				846770661FB31336001B392D /* UIView+Visuals.m in Sources */,
 				845C70D71FB17B17009ED54C /* CTMediator+BDHomeModuleActions.m in Sources */,
+				841F7E671FBC1D7C00CD12AC /* BDInputTableViewCell.m in Sources */,
+				84E92DF91FD1254C003E4FEB /* YXJSwipeLongPressGestureRecognizer.m in Sources */,
 				846770111FB31336001B392D /* UIColor+Random.m in Sources */,
 				84676FC41FB31336001B392D /* NSIndexPath+Offset.m in Sources */,
 				846770541FB31336001B392D /* UITextView+PlaceHolder.m in Sources */,
@@ -2691,11 +2833,13 @@
 				84676FC71FB31336001B392D /* NSNotificationCenter+MainThread.m in Sources */,
 				84B093541FB0528000B12491 /* BDAppDelegate.m in Sources */,
 				8467704A1FB31336001B392D /* UITableView+FDKeyedHeightCache.m in Sources */,
+				84E92DF71FD1254C003E4FEB /* UIButton+YXJEdgeInsets.m in Sources */,
 				846770561FB31336001B392D /* UIView+Animation.m in Sources */,
 				84676FE21FB31336001B392D /* NSString+MIME.m in Sources */,
 				849977341FB06DA0003C8811 /* BDMineConfigManager.m in Sources */,
 				84676FF71FB31336001B392D /* CAAnimation+EasingEquations.m in Sources */,
 				845C70F21FB1851D009ED54C /* Target_Order.m in Sources */,
+				84E586F41FCBBB4C00283927 /* HTLinkLabel.m in Sources */,
 				84676FC11FB31336001B392D /* NSFileHandle+readLine.m in Sources */,
 				846770691FB31336001B392D /* UIViewController+BackButtonTouched.m in Sources */,
 				84676FBE1FB31336001B392D /* NSDictionary+URL.m in Sources */,
@@ -2756,6 +2900,7 @@
 				846770421FB31336001B392D /* UIScrollView+Addition.m in Sources */,
 				846770261FB31336001B392D /* UIImage+RemoteSize.m in Sources */,
 				84676FA41FB31336001B392D /* CLLocationManager+Blocks.m in Sources */,
+				84E92DFA1FD1254C003E4FEB /* YXJSwipeTableViewCell.m in Sources */,
 				846770041FB31336001B392D /* UIBezierPath+LxThroughPointsBezier.m in Sources */,
 				846770451FB31336001B392D /* UIScrollView+Pages.m in Sources */,
 				84676FB71FB31336001B392D /* NSDate+Utilities.m in Sources */,
@@ -2786,6 +2931,7 @@
 				84676FFE1FB31336001B392D /* UIApplication+KeyboardFrame.m in Sources */,
 				84676FAF1FB31336001B392D /* NSData+SDDataCache.m in Sources */,
 				84676FA31FB31336001B392D /* CLLocation+CH1903.m in Sources */,
+				84E4FDD51FD131B400125E83 /* BDHomeListTableCell.m in Sources */,
 				845B98181FB404F4002A80ED /* BDAlertView.m in Sources */,
 				8467706D1FB31336001B392D /* UIViewController+StoreKit.m in Sources */,
 				846770361FB31336001B392D /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
@@ -2797,7 +2943,6 @@
 				846770001FB31336001B392D /* UIApplication+Permissions.m in Sources */,
 				84676FB01FB31336001B392D /* NSData+zlib.m in Sources */,
 				846770751FB31336001B392D /* UIWebView+MetaParser.m in Sources */,
-				84676D5D1FB2B3EE001B392D /* MBProgressHUD+BD.m in Sources */,
 				846770031FB31336001B392D /* UIBezierPath+Length.m in Sources */,
 				8467702B1FB31336001B392D /* UIImageView+BetterFace.m in Sources */,
 				84676FB51FB31336001B392D /* NSDate+Reporting.m in Sources */,
@@ -2805,11 +2950,13 @@
 				846770321FB31336001B392D /* UILabel+ESAdjustableLabel.m in Sources */,
 				84676FEE1FB31336001B392D /* NSTimer+Blocks.m in Sources */,
 				84676FDD1FB31336001B392D /* NSString+DictionaryValue.m in Sources */,
+				841F7E6A1FBC427A00CD12AC /* BDTextField.m in Sources */,
 				8467703F1FB31336001B392D /* UIResponder+FirstResponder.m in Sources */,
 				8467702A1FB31336001B392D /* UIImageView+Addition.m in Sources */,
 				84676FDC1FB31336001B392D /* NSString+Contains.m in Sources */,
 				846770171FB31336001B392D /* UIFont+DynamicFontControl.m in Sources */,
 				84676FE01FB31336001B392D /* NSString+Hash.m in Sources */,
+				840FE1EE1FD558B000AA9CCD /* XTSegmentControl.m in Sources */,
 				84676F9B1FB31336001B392D /* NSFetchRequest+Extensions.m in Sources */,
 				84676FD81FB31336001B392D /* NSRunLoop+PerformBlock.m in Sources */,
 				8467702E1FB31336001B392D /* UIImageView+Letters.m in Sources */,
@@ -2820,6 +2967,7 @@
 				84676FA71FB31336001B392D /* MKMapView+ZoomLevel.m in Sources */,
 				84676FD41FB31336001B392D /* NSObject+KVOBlocks.m in Sources */,
 				84676D871FB3095B001B392D /* XAspect-JPushAppDelegate.m in Sources */,
+				84570F0D1FB98D6A00647C64 /* BDProgressHud.m in Sources */,
 				846770501FB31336001B392D /* UITextField+History.m in Sources */,
 				846770371FB31336001B392D /* UINavigationController+JZExtension.m in Sources */,
 				8467706E1FB31336001B392D /* UIViewController+TopBarMessage.m in Sources */,
@@ -2831,6 +2979,7 @@
 				846770771FB31336001B392D /* UIWebVIew+SwipeGesture.m in Sources */,
 				84676FD21FB31336001B392D /* NSObject+EasyCopy.m in Sources */,
 				8467703E1FB31336001B392D /* UIResponder+Chain.m in Sources */,
+				84E92DF61FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.m in Sources */,
 				84676FEB1FB31336001B392D /* NSString+UUID.m in Sources */,
 				845C70DE1FB17CE9009ED54C /* Target_Public.m in Sources */,
 				84676D4F1FB29CD6001B392D /* BDHomeConfigManager.m in Sources */,
@@ -2854,6 +3003,7 @@
 				8467701E1FB31336001B392D /* UIImage+Capture.m in Sources */,
 				846770081FB31336001B392D /* UIButton+Block.m in Sources */,
 				849977161FB060C0003C8811 /* BDFileLogger.m in Sources */,
+				84E586FA1FCBBB7C00283927 /* BDLinkViewController.m in Sources */,
 				846770631FB31336001B392D /* UIView+Shake.m in Sources */,
 				84676FE81FB31336001B392D /* NSString+Size.m in Sources */,
 				8467706C1FB31336001B392D /* UIViewController+MJPopupViewController.m in Sources */,
@@ -2903,9 +3053,11 @@
 				84676FAA1FB31336001B392D /* NSBundle+AppIcon.m in Sources */,
 				846770491FB31336001B392D /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				8467701B1FB31336001B392D /* UIImage+animatedGIF.m in Sources */,
+				84E92DFB1FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m in Sources */,
 				8448B81E1FB042E900EF1925 /* AppDelegate.m in Sources */,
 				846770101FB31336001B392D /* UIColor+Modify.m in Sources */,
 				84676F9D1FB31336001B392D /* NSManagedObject+Extensions.m in Sources */,
+				841F7E621FBC0BBE00CD12AC /* YZInputView.m in Sources */,
 				846770151FB31336001B392D /* UIDevice+Hardware.m in Sources */,
 				845C70EF1FB184FC009ED54C /* BDOrderViewController.m in Sources */,
 				8467705C1FB31336001B392D /* UIView+FDCollapsibleConstraints.m in Sources */,

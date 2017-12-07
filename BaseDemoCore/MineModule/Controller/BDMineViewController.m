@@ -22,6 +22,9 @@
     
     self.view.backgroundColor=[UIColor redColor];
     
+//    self.navigationView.hidden=YES;
+//    [self.navigationView navigationAlphaSlowChangeWithScrollow:nil start:NAV_HEIGHT end:NAV_HEIGHT*4];
+    
     
     BDMineServiceApi *serviceApi=[[BDMineServiceApi alloc]init];
     [serviceApi startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BDBaseNavigationViewController : UINavigationController
+@interface BDBaseNavigationViewController : EasyNavigationController
+
 
 @end

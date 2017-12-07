@@ -19,6 +19,4 @@
 
 #import <CTMediator/CTMediator.h>
 
-
-
 #endif /* BDCore_h */

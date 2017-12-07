@@ -23,11 +23,14 @@ PODS:
     - CocoaLumberjack/Default
   - CTMediator (12)
   - CYLTabBarController (1.14.2)
+  - EasyNavigation (1.0.1)
   - FLEX (2.4.0)
   - GVUserDefaults (1.0.2)
   - JSONModel (1.0.2)
+  - LEEAlert (1.1.4)
   - Masonry (0.6.4)
-  - MBProgressHUD (1.0.0)
+  - MBProgressHUD+WJExtension (1.3.1)
+  - pop (1.0.10)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -41,6 +44,7 @@ PODS:
   - RealReachability/Connection (1.1.9)
   - RealReachability/Ping (1.1.9)
   - SCLAlertView-Objective-C (1.1.2)
+  - SCNavigationControlCenter (0.1.5)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
@@ -51,6 +55,8 @@ PODS:
   - XAspect/Core (1.0.5):
     - XAspect/Macros
   - XAspect/Macros (1.0.5)
+  - XZPickView (1):
+    - Masonry
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYCache (1.0.4)
@@ -61,17 +67,22 @@ DEPENDENCIES:
   - CocoaLumberjack (~> 3.3.0)
   - CTMediator (~> 12)
   - CYLTabBarController (~> 1.14.2)
+  - EasyNavigation (~> 1.0.1)
   - FLEX (~> 2.4.0)
   - GVUserDefaults (~> 1.0.2)
   - JSONModel (~> 1.0.1)
+  - LEEAlert (~> 1.1.4)
   - Masonry (~> 0.6.1)
-  - MBProgressHUD (~> 1.0.0)
+  - MBProgressHUD+WJExtension (~> 1.3.1)
+  - pop (~> 1.0.10)
   - ReactiveCocoa (~> 2.5)
   - RealReachability (~> 1.1.9)
   - SCLAlertView-Objective-C (~> 1.1.2)
+  - SCNavigationControlCenter (~> 0.1.5)
   - SDWebImage (~> 3.7.5)
   - Toast (~> 3.1.0)
   - XAspect (~> 1.0.5)
+  - XZPickView (~> 1)
   - YTKNetwork (~> 2.0.4)
   - YYCache (~> 1.0.4)
 
@@ -81,20 +92,25 @@ SPEC CHECKSUMS:
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
   CYLTabBarController: 5eac1940e20aa934a609ecec38837da63a41dcfe
+  EasyNavigation: f6e5dd4eccedd2245f505474a8f78daeecacc4b7
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
+  LEEAlert: a18b373706e58d3ac2ffeb90ac35ebb27739ad4a
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MBProgressHUD+WJExtension: 1d9c93951b49e8c711fef6e6089aa6d7d3321192
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
   SCLAlertView-Objective-C: 0e54351fa4f98a5c7c6ad3727e6dbb46784534e5
+  SCNavigationControlCenter: 9629009635a9c9e10c5106cec9b67204eae0f870
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
+  XZPickView: 26a9ce7edc2280dd81b8c228559d29d4e6ab969e
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 9ad654435c8d0c169ba62893192b3f1403cc2f5c
+PODFILE CHECKSUM: 30ed69cb887fafaabd6817c1c2d492206b1da8a0
 
 COCOAPODS: 1.3.1

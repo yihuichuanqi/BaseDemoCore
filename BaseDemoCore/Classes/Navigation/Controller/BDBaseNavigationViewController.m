@@ -20,7 +20,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+
     // Do any additional setup after loading the view.
+}
+#pragma mark-设置效果类似多任务效果
+-(void)setNavigationMultitaskStyle
+{
+    [[SCNavigationControlCenter sharedInstance] setNavigationController:self];
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressed:)];
+    [self.navigationBar addGestureRecognizer:longPress];
+}
+- (void)longPressed:(UILongPressGestureRecognizer *)sender
+{
+    if(sender.state == UIGestureRecognizerStateBegan)
+    {
+        [[SCNavigationControlCenter sharedInstance] showWithNavigationController:self];
+    }
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated

@@ -11,23 +11,32 @@
 #import "CTMediator+BDMimeModuleActions.h"
 #import "CTMediator+BDHomeModuleActions.h"
 #import "CTMediator+BDPublicModuleActions.h"
+#import "BDLinkViewController.h"
+
+
 
 @interface BDCYLTabBarControllerConfig()<UITabBarControllerDelegate>
 
-@property (nonatomic,readwrite,strong) CYLTabBarController *tabBarController;
+@property (nonatomic,readwrite,strong) CYLTabBarController *privateTabBarController;
 @end
 
 @implementation BDCYLTabBarControllerConfig
 
+-(CYLTabBarController *)privateTabBarController
+{
+    if (_privateTabBarController==nil)
+    {
+        [self setupNavigationBarStyle];
+        CYLTabBarController *tabBarController=[CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemAttributes];
+        _privateTabBarController=tabBarController;
+        [self setupTabBarStyleForController:tabBarController];
+
+    }
+    return _privateTabBarController;
+}
 -(CYLTabBarController *)tabBarController
 {
-    if (_tabBarController==nil)
-    {
-        CYLTabBarController *tabBarController=[CYLTabBarController tabBarControllerWithViewControllers:self.viewControllers tabBarItemsAttributes:self.tabBarItemAttributes];
-        _tabBarController=tabBarController;
-        [self setupTabBarStyleForController:tabBarController];
-    }
-    return _tabBarController;
+    return self.privateTabBarController;
 }
 
 -(NSArray *)viewControllers
@@ -36,15 +45,15 @@
     BDBaseNavigationViewController *homeNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:homeVC];
     UIViewController *mineVC=[[CTMediator sharedInstance] CTMediator_Mine_ViewControllerForMine];
     BDBaseNavigationViewController *mineNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:mineVC];
-    UIViewController *publicVC=[[CTMediator sharedInstance] CTMediator_Public_ViewControllerForPublic];
-    BDBaseNavigationViewController *publicNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:publicVC];
+//    UIViewController *publicVC=[[CTMediator sharedInstance] CTMediator_Public_ViewControllerForPublic];
+    UIViewController *linkVC=[[BDLinkViewController alloc]init];
+    BDBaseNavigationViewController *publicNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:linkVC];
 
     NSArray *viewControllers=@[homeNav,publicNav,mineNav];
     return viewControllers;
 }
 -(NSArray *)tabBarItemAttributes
 {
-    
     NSDictionary *homeDic=@{CYLTabBarItemTitle:@"首页",CYLTabBarItemImage:@"tab_home_icon",CYLTabBarItemSelectedImage:@"tab_home_click_icon"};
     NSDictionary *mineDic=@{CYLTabBarItemTitle:@"我的",CYLTabBarItemImage:@"tab_mine_icon",CYLTabBarItemSelectedImage:@"tab_mine_click_icon"};
     NSDictionary *publicDic=@{CYLTabBarItemTitle:@"发布",CYLTabBarItemImage:@"tab_discovery_icon",CYLTabBarItemSelectedImage:@"tab_discovery_click_icon"};
@@ -65,8 +74,22 @@
     [tabBarItem setTitleTextAttributes:normalDic forState:UIControlStateNormal];
     [tabBarItem setTitleTextAttributes:selectDic forState:UIControlStateSelected];
 }
+//navigationavigation样式(设置需要在导航栏初始化使用之前)
+-(void)setupNavigationBarStyle
+{
+    [self setupNavigationByEasyNavigation];
+}
 
+#pragma mark-不同方式的设置
 
+-(void)setupNavigationByEasyNavigation
+{
+    EasyNavigationOptions *options=[EasyNavigationOptions shareInstance];
+    options.titleColor=[UIColor blueColor];
+    options.titleFont=[UIFont systemFontOfSize:19];
+    options.navBackGroundColor=[UIColor yellowColor];
+
+}
 
 
 

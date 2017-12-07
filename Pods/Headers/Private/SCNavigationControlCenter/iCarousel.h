@@ -1,0 +1,1 @@
+../../../SCNavigationControlCenter/Pod/Classes/iCarousel.h
