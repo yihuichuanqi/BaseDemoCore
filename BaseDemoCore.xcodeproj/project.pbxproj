@@ -8,9 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		840FE1EE1FD558B000AA9CCD /* XTSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 840FE1ED1FD558B000AA9CCD /* XTSegmentControl.m */; };
+		84103A1D1FEB518A006B9165 /* BDNotificationConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A1C1FEB518A006B9165 /* BDNotificationConst.m */; };
+		84103A201FEB51A2006B9165 /* BDAppConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A1F1FEB51A2006B9165 /* BDAppConst.m */; };
+		84103A231FEB55C6006B9165 /* BDSystemTimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A221FEB55C6006B9165 /* BDSystemTimeUtil.m */; };
+		84103A261FEB588F006B9165 /* BDRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A251FEB588F006B9165 /* BDRequestAPI.m */; };
+		84103A291FEB5C5F006B9165 /* BDOHHttpRequestAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A281FEB5C5F006B9165 /* BDOHHttpRequestAPI.m */; };
+		84103A2C1FEB5F69006B9165 /* BDAppKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A2B1FEB5F69006B9165 /* BDAppKeys.m */; };
+		84103A2F1FEB7F29006B9165 /* BDFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A2E1FEB7F29006B9165 /* BDFileUtil.m */; };
+		84103A321FEB94E0006B9165 /* BDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A311FEB94E0006B9165 /* BDBaseModel.m */; };
+		84103A361FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A351FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.m */; };
+		84103A391FEB9CD3006B9165 /* BDSystemTimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A381FEB9CD3006B9165 /* BDSystemTimeModel.m */; };
+		84103A3F1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A3E1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.m */; };
+		84103A421FEBB3AF006B9165 /* BDOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84103A411FEBB3AF006B9165 /* BDOptions.m */; };
 		841F7E621FBC0BBE00CD12AC /* YZInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F7E611FBC0BBE00CD12AC /* YZInputView.m */; };
 		841F7E671FBC1D7C00CD12AC /* BDInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F7E661FBC1D7C00CD12AC /* BDInputTableViewCell.m */; };
 		841F7E6A1FBC427A00CD12AC /* BDTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 841F7E691FBC427A00CD12AC /* BDTextField.m */; };
+		842588A01FEA3A8C00E05CEB /* BDUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8425889F1FEA3A8C00E05CEB /* BDUserManager.m */; };
+		842588A31FEA3B2600E05CEB /* BDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588A21FEA3B2600E05CEB /* BDUser.m */; };
+		842588A61FEA3B5800E05CEB /* BDUserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588A51FEA3B5800E05CEB /* BDUserProfile.m */; };
+		842588A91FEA400500E05CEB /* BDDefaultsConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588A81FEA400500E05CEB /* BDDefaultsConst.m */; };
+		842588AD1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588AC1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.m */; };
+		842588B01FEA457A00E05CEB /* BDKeyChainUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588AF1FEA457A00E05CEB /* BDKeyChainUtil.m */; };
+		842588B31FEA810D00E05CEB /* BDRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588B21FEA810D00E05CEB /* BDRouter.m */; };
+		842588B61FEA837700E05CEB /* BDNetWorkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 842588B51FEA837700E05CEB /* BDNetWorkConstants.m */; };
+		84286CF81FF5EBDF00794A0D /* BDFunctionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286CF71FF5EBDF00794A0D /* BDFunctionConst.m */; };
+		84286D071FF619F200794A0D /* BDLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286D061FF619F200794A0D /* BDLoginButton.m */; };
+		84286D0E1FF61DBC00794A0D /* BDViewIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286D0D1FF61DBC00794A0D /* BDViewIntercepter.m */; };
+		84286D111FF62F2400794A0D /* BDViewModelIntercepter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286D101FF62F2400794A0D /* BDViewModelIntercepter.m */; };
+		84286D141FF630A300794A0D /* NSObject+BDNonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286D131FF630A300794A0D /* NSObject+BDNonBase.m */; };
+		84286D171FF632CF00794A0D /* UIViewController+BDNonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 84286D161FF632CF00794A0D /* UIViewController+BDNonBase.m */; };
 		8448B81E1FB042E900EF1925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8448B81D1FB042E900EF1925 /* AppDelegate.m */; };
 		8448B8261FB042E900EF1925 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8448B8251FB042E900EF1925 /* Assets.xcassets */; };
 		8448B8291FB042E900EF1925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448B8271FB042E900EF1925 /* LaunchScreen.storyboard */; };
@@ -294,6 +320,12 @@
 		84E92DFA1FD1254C003E4FEB /* YXJSwipeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DEF1FD1254C003E4FEB /* YXJSwipeTableViewCell.m */; };
 		84E92DFB1FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DF21FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m */; };
 		84E92DFC1FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E92DF41FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m */; };
+		84F734AA1FF49D26000B3BBE /* UITableView+BDEmptyTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F734A91FF49D26000B3BBE /* UITableView+BDEmptyTable.m */; };
+		84F734AD1FF4A066000B3BBE /* BDMethodSwizzingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F734AC1FF4A066000B3BBE /* BDMethodSwizzingUtil.m */; };
+		84F734B01FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F734AF1FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.m */; };
+		84F734B41FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F734B31FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.m */; };
+		84F734B91FF4FDE6000B3BBE /* BDRedHotRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F734B81FF4FDE6000B3BBE /* BDRedHotRegister.m */; };
+		84FD6EE21FED099200D597B7 /* BDAppStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FD6EE11FED099200D597B7 /* BDAppStatus.m */; };
 		F83CFD02F2E5EEEFDD72D37D /* libPods-BaseDemoCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C966EDBD4F2D6340577BE308 /* libPods-BaseDemoCore.a */; };
 /* End PBXBuildFile section */
 
@@ -318,12 +350,68 @@
 		3FD5BC37B28166679FF300D8 /* Pods-BaseDemoCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseDemoCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseDemoCore/Pods-BaseDemoCore.release.xcconfig"; sourceTree = "<group>"; };
 		840FE1EC1FD558B000AA9CCD /* XTSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSegmentControl.h; sourceTree = "<group>"; };
 		840FE1ED1FD558B000AA9CCD /* XTSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSegmentControl.m; sourceTree = "<group>"; };
+		84103A1B1FEB518A006B9165 /* BDNotificationConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDNotificationConst.h; sourceTree = "<group>"; };
+		84103A1C1FEB518A006B9165 /* BDNotificationConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDNotificationConst.m; sourceTree = "<group>"; };
+		84103A1E1FEB51A2006B9165 /* BDAppConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppConst.h; sourceTree = "<group>"; };
+		84103A1F1FEB51A2006B9165 /* BDAppConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppConst.m; sourceTree = "<group>"; };
+		84103A211FEB55C6006B9165 /* BDSystemTimeUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSystemTimeUtil.h; sourceTree = "<group>"; };
+		84103A221FEB55C6006B9165 /* BDSystemTimeUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSystemTimeUtil.m; sourceTree = "<group>"; };
+		84103A241FEB588F006B9165 /* BDRequestAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDRequestAPI.h; sourceTree = "<group>"; };
+		84103A251FEB588F006B9165 /* BDRequestAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDRequestAPI.m; sourceTree = "<group>"; };
+		84103A271FEB5C5F006B9165 /* BDOHHttpRequestAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDOHHttpRequestAPI.h; sourceTree = "<group>"; };
+		84103A281FEB5C5F006B9165 /* BDOHHttpRequestAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDOHHttpRequestAPI.m; sourceTree = "<group>"; };
+		84103A2A1FEB5F69006B9165 /* BDAppKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppKeys.h; sourceTree = "<group>"; };
+		84103A2B1FEB5F69006B9165 /* BDAppKeys.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppKeys.m; sourceTree = "<group>"; };
+		84103A2D1FEB7F29006B9165 /* BDFileUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFileUtil.h; sourceTree = "<group>"; };
+		84103A2E1FEB7F29006B9165 /* BDFileUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDFileUtil.m; sourceTree = "<group>"; };
+		84103A301FEB94E0006B9165 /* BDBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDBaseModel.h; sourceTree = "<group>"; };
+		84103A311FEB94E0006B9165 /* BDBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDBaseModel.m; sourceTree = "<group>"; };
+		84103A341FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BDRequestAPI+BDSystemTimeAPI.h"; sourceTree = "<group>"; };
+		84103A351FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "BDRequestAPI+BDSystemTimeAPI.m"; sourceTree = "<group>"; };
+		84103A371FEB9CD3006B9165 /* BDSystemTimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSystemTimeModel.h; sourceTree = "<group>"; };
+		84103A381FEB9CD3006B9165 /* BDSystemTimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSystemTimeModel.m; sourceTree = "<group>"; };
+		84103A3D1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURLSessionDataTask+JSON.h"; sourceTree = "<group>"; };
+		84103A3E1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURLSessionDataTask+JSON.m"; sourceTree = "<group>"; };
+		84103A401FEBB3AF006B9165 /* BDOptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDOptions.h; sourceTree = "<group>"; };
+		84103A411FEBB3AF006B9165 /* BDOptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDOptions.m; sourceTree = "<group>"; };
 		841F7E601FBC0BBE00CD12AC /* YZInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZInputView.h; sourceTree = "<group>"; };
 		841F7E611FBC0BBE00CD12AC /* YZInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZInputView.m; sourceTree = "<group>"; };
 		841F7E651FBC1D7C00CD12AC /* BDInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDInputTableViewCell.h; sourceTree = "<group>"; };
 		841F7E661FBC1D7C00CD12AC /* BDInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDInputTableViewCell.m; sourceTree = "<group>"; };
 		841F7E681FBC427A00CD12AC /* BDTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTextField.h; sourceTree = "<group>"; };
 		841F7E691FBC427A00CD12AC /* BDTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDTextField.m; sourceTree = "<group>"; };
+		8425889E1FEA3A8C00E05CEB /* BDUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDUserManager.h; sourceTree = "<group>"; };
+		8425889F1FEA3A8C00E05CEB /* BDUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDUserManager.m; sourceTree = "<group>"; };
+		842588A11FEA3B2600E05CEB /* BDUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDUser.h; sourceTree = "<group>"; };
+		842588A21FEA3B2600E05CEB /* BDUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDUser.m; sourceTree = "<group>"; };
+		842588A41FEA3B5800E05CEB /* BDUserProfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDUserProfile.h; sourceTree = "<group>"; };
+		842588A51FEA3B5800E05CEB /* BDUserProfile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDUserProfile.m; sourceTree = "<group>"; };
+		842588A71FEA400500E05CEB /* BDDefaultsConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDDefaultsConst.h; sourceTree = "<group>"; };
+		842588A81FEA400500E05CEB /* BDDefaultsConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDDefaultsConst.m; sourceTree = "<group>"; };
+		842588AB1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSKeyedUnarchiver+ErrorLogging.h"; sourceTree = "<group>"; };
+		842588AC1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSKeyedUnarchiver+ErrorLogging.m"; sourceTree = "<group>"; };
+		842588AE1FEA457A00E05CEB /* BDKeyChainUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDKeyChainUtil.h; sourceTree = "<group>"; };
+		842588AF1FEA457A00E05CEB /* BDKeyChainUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDKeyChainUtil.m; sourceTree = "<group>"; };
+		842588B11FEA810D00E05CEB /* BDRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDRouter.h; sourceTree = "<group>"; };
+		842588B21FEA810D00E05CEB /* BDRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDRouter.m; sourceTree = "<group>"; };
+		842588B41FEA837700E05CEB /* BDNetWorkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDNetWorkConstants.h; sourceTree = "<group>"; };
+		842588B51FEA837700E05CEB /* BDNetWorkConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDNetWorkConstants.m; sourceTree = "<group>"; };
+		84286CF61FF5EBDF00794A0D /* BDFunctionConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDFunctionConst.h; sourceTree = "<group>"; };
+		84286CF71FF5EBDF00794A0D /* BDFunctionConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDFunctionConst.m; sourceTree = "<group>"; };
+		84286CFA1FF616E600794A0D /* BDViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewControllerProtocol.h; sourceTree = "<group>"; };
+		84286CFB1FF616FA00794A0D /* BDViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewProtocol.h; sourceTree = "<group>"; };
+		84286CFC1FF6170D00794A0D /* BDViewModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewModelProtocol.h; sourceTree = "<group>"; };
+		84286CFD1FF6172900794A0D /* BDModelProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDModelProtocol.h; sourceTree = "<group>"; };
+		84286D051FF619F200794A0D /* BDLoginButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDLoginButton.h; sourceTree = "<group>"; };
+		84286D061FF619F200794A0D /* BDLoginButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDLoginButton.m; sourceTree = "<group>"; };
+		84286D0C1FF61DBC00794A0D /* BDViewIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewIntercepter.h; sourceTree = "<group>"; };
+		84286D0D1FF61DBC00794A0D /* BDViewIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDViewIntercepter.m; sourceTree = "<group>"; };
+		84286D0F1FF62F2400794A0D /* BDViewModelIntercepter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDViewModelIntercepter.h; sourceTree = "<group>"; };
+		84286D101FF62F2400794A0D /* BDViewModelIntercepter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDViewModelIntercepter.m; sourceTree = "<group>"; };
+		84286D121FF630A300794A0D /* NSObject+BDNonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BDNonBase.h"; sourceTree = "<group>"; };
+		84286D131FF630A300794A0D /* NSObject+BDNonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BDNonBase.m"; sourceTree = "<group>"; };
+		84286D151FF632CF00794A0D /* UIViewController+BDNonBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BDNonBase.h"; sourceTree = "<group>"; };
+		84286D161FF632CF00794A0D /* UIViewController+BDNonBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BDNonBase.m"; sourceTree = "<group>"; };
 		8448B8191FB042E900EF1925 /* BaseDemoCore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseDemoCore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448B81C1FB042E900EF1925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8448B81D1FB042E900EF1925 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -901,6 +989,20 @@
 		84E92DF21FD1254C003E4FEB /* YXJSwipeUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
 		84E92DF31FD1254C003E4FEB /* YXJSwipeUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXJSwipeUtilityButtonView.h; sourceTree = "<group>"; };
 		84E92DF41FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXJSwipeUtilityButtonView.m; sourceTree = "<group>"; };
+		84F734A81FF49D26000B3BBE /* UITableView+BDEmptyTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+BDEmptyTable.h"; sourceTree = "<group>"; };
+		84F734A91FF49D26000B3BBE /* UITableView+BDEmptyTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+BDEmptyTable.m"; sourceTree = "<group>"; };
+		84F734AB1FF4A066000B3BBE /* BDMethodSwizzingUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDMethodSwizzingUtil.h; sourceTree = "<group>"; };
+		84F734AC1FF4A066000B3BBE /* BDMethodSwizzingUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDMethodSwizzingUtil.m; sourceTree = "<group>"; };
+		84F734AE1FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+BDAutoEmptyTable.h"; sourceTree = "<group>"; };
+		84F734AF1FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+BDAutoEmptyTable.m"; sourceTree = "<group>"; };
+		84F734B11FF4C2E2000B3BBE /* BDTableViewPlaceHolderDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTableViewPlaceHolderDelegate.h; sourceTree = "<group>"; };
+		84F734B21FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BDAutoEmptyView.h"; sourceTree = "<group>"; };
+		84F734B31FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BDAutoEmptyView.m"; sourceTree = "<group>"; };
+		84F734B51FF4CD96000B3BBE /* BDTableViewEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDTableViewEmpty.h; sourceTree = "<group>"; };
+		84F734B71FF4FDE6000B3BBE /* BDRedHotRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDRedHotRegister.h; sourceTree = "<group>"; };
+		84F734B81FF4FDE6000B3BBE /* BDRedHotRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDRedHotRegister.m; sourceTree = "<group>"; };
+		84FD6EE01FED099200D597B7 /* BDAppStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDAppStatus.h; sourceTree = "<group>"; };
+		84FD6EE11FED099200D597B7 /* BDAppStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDAppStatus.m; sourceTree = "<group>"; };
 		9FEEC8FAEC3E53BEE0B08439 /* Pods-BaseDemoCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseDemoCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseDemoCore/Pods-BaseDemoCore.debug.xcconfig"; sourceTree = "<group>"; };
 		C966EDBD4F2D6340577BE308 /* libPods-BaseDemoCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseDemoCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -969,6 +1071,123 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		842588AA1FEA429600E05CEB /* NSKeyedArchiver */ = {
+			isa = PBXGroup;
+			children = (
+				842588AB1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.h */,
+				842588AC1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.m */,
+			);
+			path = NSKeyedArchiver;
+			sourceTree = "<group>";
+		};
+		84286CF91FF616A800794A0D /* BDMVVMProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				84286D0B1FF61D3A00794A0D /* View */,
+				84286D0A1FF61D3000794A0D /* Model */,
+				84286D091FF61D2600794A0D /* ViewModel */,
+				84286D081FF61D1F00794A0D /* Controller */,
+			);
+			path = BDMVVMProtocol;
+			sourceTree = "<group>";
+		};
+		84286CFE1FF6197E00794A0D /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				84286D041FF619BC00794A0D /* Other */,
+				84286D031FF619B400794A0D /* Service */,
+				84286D021FF619AA00794A0D /* Category */,
+				84286D011FF619A200794A0D /* Actions */,
+				84286D001FF6199C00794A0D /* View */,
+				84286CFF1FF6199400794A0D /* Controller */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		84286CFF1FF6199400794A0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84286D001FF6199C00794A0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84286D051FF619F200794A0D /* BDLoginButton.h */,
+				84286D061FF619F200794A0D /* BDLoginButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84286D011FF619A200794A0D /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		84286D021FF619AA00794A0D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		84286D031FF619B400794A0D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		84286D041FF619BC00794A0D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		84286D081FF61D1F00794A0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84286CFA1FF616E600794A0D /* BDViewControllerProtocol.h */,
+				84286D151FF632CF00794A0D /* UIViewController+BDNonBase.h */,
+				84286D161FF632CF00794A0D /* UIViewController+BDNonBase.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84286D091FF61D2600794A0D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84286CFC1FF6170D00794A0D /* BDViewModelProtocol.h */,
+				84286D121FF630A300794A0D /* NSObject+BDNonBase.h */,
+				84286D131FF630A300794A0D /* NSObject+BDNonBase.m */,
+				84286D0F1FF62F2400794A0D /* BDViewModelIntercepter.h */,
+				84286D101FF62F2400794A0D /* BDViewModelIntercepter.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84286D0A1FF61D3000794A0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84286CFD1FF6172900794A0D /* BDModelProtocol.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84286D0B1FF61D3A00794A0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84286CFB1FF616FA00794A0D /* BDViewProtocol.h */,
+				84286D0C1FF61DBC00794A0D /* BDViewIntercepter.h */,
+				84286D0D1FF61DBC00794A0D /* BDViewIntercepter.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		8447060C1FBA92E80019EEDB /* BDVendors */ = {
 			isa = PBXGroup;
 			children = (
@@ -1003,13 +1222,30 @@
 		8448B81B1FB042E900EF1925 /* BaseDemoCore */ = {
 			isa = PBXGroup;
 			children = (
+				84F734B61FF4FDBD000B3BBE /* RedDot */,
 				84E92DE41FD1254C003E4FEB /* YXJSwipeTableViewCell_iOS */,
 				8448B81C1FB042E900EF1925 /* AppDelegate.h */,
 				8448B81D1FB042E900EF1925 /* AppDelegate.m */,
+				84FD6EE01FED099200D597B7 /* BDAppStatus.h */,
+				84FD6EE11FED099200D597B7 /* BDAppStatus.m */,
+				84103A401FEBB3AF006B9165 /* BDOptions.h */,
+				84103A411FEBB3AF006B9165 /* BDOptions.m */,
+				8425889E1FEA3A8C00E05CEB /* BDUserManager.h */,
+				8425889F1FEA3A8C00E05CEB /* BDUserManager.m */,
+				842588AF1FEA457A00E05CEB /* BDKeyChainUtil.m */,
+				84103A301FEB94E0006B9165 /* BDBaseModel.h */,
+				84103A311FEB94E0006B9165 /* BDBaseModel.m */,
+				842588A11FEA3B2600E05CEB /* BDUser.h */,
+				842588A21FEA3B2600E05CEB /* BDUser.m */,
+				842588A41FEA3B5800E05CEB /* BDUserProfile.h */,
+				842588A51FEA3B5800E05CEB /* BDUserProfile.m */,
+				842588AE1FEA457A00E05CEB /* BDKeyChainUtil.h */,
 				84E586F51FCBBB5F00283927 /* LabelCell.h */,
 				84E586F61FCBBB6000283927 /* LabelCell.m */,
 				84E586F81FCBBB7C00283927 /* BDLinkViewController.h */,
 				84E586F91FCBBB7C00283927 /* BDLinkViewController.m */,
+				84286CFE1FF6197E00794A0D /* LoginModule */,
+				84F734A71FF49C6E000B3BBE /* EmptyTable */,
 				84E586F11FCBBB4C00283927 /* HTLinkLabel */,
 				845C70E21FB17EDB009ED54C /* BaseDemoPrefixHeader.pch */,
 				845C70E71FB184BA009ED54C /* OrderModule */,
@@ -1089,6 +1325,24 @@
 			children = (
 				845C70C71FB15F2D009ED54C /* BDBaseRequest.h */,
 				845C70C81FB15F2D009ED54C /* BDBaseRequest.m */,
+				84103A2A1FEB5F69006B9165 /* BDAppKeys.h */,
+				84103A2B1FEB5F69006B9165 /* BDAppKeys.m */,
+				84103A241FEB588F006B9165 /* BDRequestAPI.h */,
+				84103A251FEB588F006B9165 /* BDRequestAPI.m */,
+				84103A341FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.h */,
+				84103A351FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.m */,
+				84103A3D1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.h */,
+				84103A3E1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.m */,
+				84103A371FEB9CD3006B9165 /* BDSystemTimeModel.h */,
+				84103A381FEB9CD3006B9165 /* BDSystemTimeModel.m */,
+				84103A271FEB5C5F006B9165 /* BDOHHttpRequestAPI.h */,
+				84103A281FEB5C5F006B9165 /* BDOHHttpRequestAPI.m */,
+				842588B11FEA810D00E05CEB /* BDRouter.h */,
+				842588B21FEA810D00E05CEB /* BDRouter.m */,
+				84103A211FEB55C6006B9165 /* BDSystemTimeUtil.h */,
+				84103A221FEB55C6006B9165 /* BDSystemTimeUtil.m */,
+				842588B41FEA837700E05CEB /* BDNetWorkConstants.h */,
+				842588B51FEA837700E05CEB /* BDNetWorkConstants.m */,
 			);
 			path = " BDNetWork";
 			sourceTree = "<group>";
@@ -1407,6 +1661,7 @@
 		84676DBB1FB31335001B392D /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				842588AA1FEA429600E05CEB /* NSKeyedArchiver */,
 				84676DBC1FB31335001B392D /* NSArray */,
 				84676DC11FB31335001B392D /* NSBundle */,
 				84676DC41FB31335001B392D /* NSData */,
@@ -2441,6 +2696,7 @@
 		84B093481FB0520300B12491 /* BDCore */ = {
 			isa = PBXGroup;
 			children = (
+				84286CF91FF616A800794A0D /* BDMVVMProtocol */,
 				8447060C1FBA92E80019EEDB /* BDVendors */,
 				84676D671FB2EE97001B392D /* BDAnalytics */,
 				84676D661FB2EE7F001B392D /* BDRemoteNoti */,
@@ -2521,6 +2777,14 @@
 		84B0934F1FB0524400B12491 /* BDConst */ = {
 			isa = PBXGroup;
 			children = (
+				842588A71FEA400500E05CEB /* BDDefaultsConst.h */,
+				842588A81FEA400500E05CEB /* BDDefaultsConst.m */,
+				84103A1B1FEB518A006B9165 /* BDNotificationConst.h */,
+				84103A1C1FEB518A006B9165 /* BDNotificationConst.m */,
+				84286CF61FF5EBDF00794A0D /* BDFunctionConst.h */,
+				84286CF71FF5EBDF00794A0D /* BDFunctionConst.m */,
+				84103A1E1FEB51A2006B9165 /* BDAppConst.h */,
+				84103A1F1FEB51A2006B9165 /* BDAppConst.m */,
 			);
 			path = BDConst;
 			sourceTree = "<group>";
@@ -2537,6 +2801,8 @@
 		84B093511FB0525600B12491 /* BDTool */ = {
 			isa = PBXGroup;
 			children = (
+				84103A2D1FEB7F29006B9165 /* BDFileUtil.h */,
+				84103A2E1FEB7F29006B9165 /* BDFileUtil.m */,
 			);
 			path = BDTool;
 			sourceTree = "<group>";
@@ -2579,6 +2845,32 @@
 				84E92DF41FD1254C003E4FEB /* YXJSwipeUtilityButtonView.m */,
 			);
 			path = YXJSwipeTableViewCell_iOS;
+			sourceTree = "<group>";
+		};
+		84F734A71FF49C6E000B3BBE /* EmptyTable */ = {
+			isa = PBXGroup;
+			children = (
+				84F734A81FF49D26000B3BBE /* UITableView+BDEmptyTable.h */,
+				84F734A91FF49D26000B3BBE /* UITableView+BDEmptyTable.m */,
+				84F734AE1FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.h */,
+				84F734AF1FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.m */,
+				84F734B21FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.h */,
+				84F734B31FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.m */,
+				84F734AB1FF4A066000B3BBE /* BDMethodSwizzingUtil.h */,
+				84F734AC1FF4A066000B3BBE /* BDMethodSwizzingUtil.m */,
+				84F734B11FF4C2E2000B3BBE /* BDTableViewPlaceHolderDelegate.h */,
+				84F734B51FF4CD96000B3BBE /* BDTableViewEmpty.h */,
+			);
+			path = EmptyTable;
+			sourceTree = "<group>";
+		};
+		84F734B61FF4FDBD000B3BBE /* RedDot */ = {
+			isa = PBXGroup;
+			children = (
+				84F734B71FF4FDE6000B3BBE /* BDRedHotRegister.h */,
+				84F734B81FF4FDE6000B3BBE /* BDRedHotRegister.m */,
+			);
+			path = RedDot;
 			sourceTree = "<group>";
 		};
 		93CAB7CA2326FB02997C2947 /* Frameworks */ = {
@@ -2799,6 +3091,8 @@
 				846770191FB31336001B392D /* UIFont-TTF.m in Sources */,
 				845C70B31FB14A09009ED54C /* BDHomeViewController.m in Sources */,
 				84E92DF81FD1254C003E4FEB /* YXJSwipeCellScrollView.m in Sources */,
+				84286CF81FF5EBDF00794A0D /* BDFunctionConst.m in Sources */,
+				84F734AD1FF4A066000B3BBE /* BDMethodSwizzingUtil.m in Sources */,
 				846770611FB31336001B392D /* UIView+Recursion.m in Sources */,
 				846770311FB31336001B392D /* UILabel+AutoSize.m in Sources */,
 				846770071FB31336001B392D /* UIButton+BackgroundColor.m in Sources */,
@@ -2808,6 +3102,7 @@
 				84E586F71FCBBB6000283927 /* LabelCell.m in Sources */,
 				84676FF61FB31336001B392D /* CAAnimation+Blocks.m in Sources */,
 				8467700A1FB31336001B392D /* UIButton+Indicator.m in Sources */,
+				84F734B91FF4FDE6000B3BBE /* BDRedHotRegister.m in Sources */,
 				846770741FB31336001B392D /* UIWebView+Load.m in Sources */,
 				846770061FB31336001B392D /* UIBezierPath+Symbol.m in Sources */,
 				84676FA61FB31336001B392D /* MKMapView+MoveLogo.m in Sources */,
@@ -2827,8 +3122,10 @@
 				846770111FB31336001B392D /* UIColor+Random.m in Sources */,
 				84676FC41FB31336001B392D /* NSIndexPath+Offset.m in Sources */,
 				846770541FB31336001B392D /* UITextView+PlaceHolder.m in Sources */,
+				84103A1D1FEB518A006B9165 /* BDNotificationConst.m in Sources */,
 				8499771A1FB0620B003C8811 /* BDLoggerFormatter.m in Sources */,
 				845C70C91FB15F2D009ED54C /* BDBaseRequest.m in Sources */,
+				842588AD1FEA42D500E05CEB /* NSKeyedUnarchiver+ErrorLogging.m in Sources */,
 				84676FA81FB31336001B392D /* NSArray+Block.m in Sources */,
 				84676FC71FB31336001B392D /* NSNotificationCenter+MainThread.m in Sources */,
 				84B093541FB0528000B12491 /* BDAppDelegate.m in Sources */,
@@ -2841,6 +3138,7 @@
 				845C70F21FB1851D009ED54C /* Target_Order.m in Sources */,
 				84E586F41FCBBB4C00283927 /* HTLinkLabel.m in Sources */,
 				84676FC11FB31336001B392D /* NSFileHandle+readLine.m in Sources */,
+				84103A421FEBB3AF006B9165 /* BDOptions.m in Sources */,
 				846770691FB31336001B392D /* UIViewController+BackButtonTouched.m in Sources */,
 				84676FBE1FB31336001B392D /* NSDictionary+URL.m in Sources */,
 				84676FAD1FB31336001B392D /* NSData+Encrypt.m in Sources */,
@@ -2858,10 +3156,12 @@
 				846770351FB31336001B392D /* UINavigationController+BATransitions.m in Sources */,
 				8467705B1FB31336001B392D /* UIView+draggable.m in Sources */,
 				846770761FB31336001B392D /* UIWebView+Style.m in Sources */,
+				84F734B41FF4C66E000B3BBE /* UIViewController+BDAutoEmptyView.m in Sources */,
 				84676FBB1FB31336001B392D /* NSDictionary+JSONString.m in Sources */,
 				8467703A1FB31336001B392D /* UINavigationItem+Loading.m in Sources */,
 				84676FCB1FB31336001B392D /* NSNumber+RomanNumerals.m in Sources */,
 				8467700D1FB31336001B392D /* UIButton+TouchAreaInsets.m in Sources */,
+				84103A2F1FEB7F29006B9165 /* BDFileUtil.m in Sources */,
 				846770021FB31336001B392D /* UIBezierPath+BasicShapes.m in Sources */,
 				8467700E1FB31336001B392D /* UIColor+Gradient.m in Sources */,
 				84676FC81FB31336001B392D /* NSDecimalNumber+CalculatingByString.m in Sources */,
@@ -2885,6 +3185,7 @@
 				84676FAC1FB31336001B392D /* NSData+Base64.m in Sources */,
 				846770551FB31336001B392D /* UITextView+Select.m in Sources */,
 				849977201FB06939003C8811 /* BDCYLTabBarControllerConfig.m in Sources */,
+				84103A291FEB5C5F006B9165 /* BDOHHttpRequestAPI.m in Sources */,
 				84676FE31FB31336001B392D /* NSString+Pinyin.m in Sources */,
 				8467702F1FB31336001B392D /* UIImageView+Reflect.m in Sources */,
 				846770161FB31336001B392D /* UIDevice+PasscodeStatus.m in Sources */,
@@ -2897,6 +3198,7 @@
 				84676FC61FB31336001B392D /* NSInvocation+Block.m in Sources */,
 				8467703B1FB31336001B392D /* UINavigationItem+Lock.m in Sources */,
 				84676FF41FB31336001B392D /* NSUserDefaults+iCloudSync.m in Sources */,
+				842588B31FEA810D00E05CEB /* BDRouter.m in Sources */,
 				846770421FB31336001B392D /* UIScrollView+Addition.m in Sources */,
 				846770261FB31336001B392D /* UIImage+RemoteSize.m in Sources */,
 				84676FA41FB31336001B392D /* CLLocationManager+Blocks.m in Sources */,
@@ -2913,12 +3215,14 @@
 				846770411FB31336001B392D /* UIScreen+Frame.m in Sources */,
 				8467704F1FB31336001B392D /* UITextField+Blocks.m in Sources */,
 				846770331FB31336001B392D /* UILabel+SuggestSize.m in Sources */,
+				84286D111FF62F2400794A0D /* BDViewModelIntercepter.m in Sources */,
 				84676FD71FB31336001B392D /* NSObject+Runtime.m in Sources */,
 				84676FD91FB31336001B392D /* NSSet+Block.m in Sources */,
 				846770471FB31336001B392D /* UISplitViewController+QuickAccess.m in Sources */,
 				846770461FB31336001B392D /* UISearchBar+Blocks.m in Sources */,
 				845C70F51FB18581009ED54C /* CTMediator+BDOrderModuleActions.m in Sources */,
 				846770531FB31336001B392D /* UITextView+PinchZoom.m in Sources */,
+				842588A01FEA3A8C00E05CEB /* BDUserManager.m in Sources */,
 				84676FF51FB31336001B392D /* NSUserDefaults+SafeAccess.m in Sources */,
 				84676FE61FB31336001B392D /* NSString+Ruby.m in Sources */,
 				84676FD01FB31336001B392D /* NSObject+AutoCoding.m in Sources */,
@@ -2956,7 +3260,9 @@
 				84676FDC1FB31336001B392D /* NSString+Contains.m in Sources */,
 				846770171FB31336001B392D /* UIFont+DynamicFontControl.m in Sources */,
 				84676FE01FB31336001B392D /* NSString+Hash.m in Sources */,
+				84103A201FEB51A2006B9165 /* BDAppConst.m in Sources */,
 				840FE1EE1FD558B000AA9CCD /* XTSegmentControl.m in Sources */,
+				84286D171FF632CF00794A0D /* UIViewController+BDNonBase.m in Sources */,
 				84676F9B1FB31336001B392D /* NSFetchRequest+Extensions.m in Sources */,
 				84676FD81FB31336001B392D /* NSRunLoop+PerformBlock.m in Sources */,
 				8467702E1FB31336001B392D /* UIImageView+Letters.m in Sources */,
@@ -2965,6 +3271,7 @@
 				849977251FB069D4003C8811 /* BDBaseNavigationViewController.m in Sources */,
 				8467701F1FB31336001B392D /* UIImage+Color.m in Sources */,
 				84676FA71FB31336001B392D /* MKMapView+ZoomLevel.m in Sources */,
+				84103A391FEB9CD3006B9165 /* BDSystemTimeModel.m in Sources */,
 				84676FD41FB31336001B392D /* NSObject+KVOBlocks.m in Sources */,
 				84676D871FB3095B001B392D /* XAspect-JPushAppDelegate.m in Sources */,
 				84570F0D1FB98D6A00647C64 /* BDProgressHud.m in Sources */,
@@ -2973,19 +3280,27 @@
 				8467706E1FB31336001B392D /* UIViewController+TopBarMessage.m in Sources */,
 				846770401FB31336001B392D /* UIResponder+UIAdapt.m in Sources */,
 				84676D751FB2FC63001B392D /* BDSharePlatformHelper.m in Sources */,
+				84103A231FEB55C6006B9165 /* BDSystemTimeUtil.m in Sources */,
 				84676FF01FB31336001B392D /* NSURL+QueryDictionary.m in Sources */,
+				84FD6EE21FED099200D597B7 /* BDAppStatus.m in Sources */,
 				84676D6C1FB2F28D001B392D /* XAspect-ShareAppDelegate.m in Sources */,
+				84286D0E1FF61DBC00794A0D /* BDViewIntercepter.m in Sources */,
 				845C70D41FB17A2C009ED54C /* Target_Home.m in Sources */,
 				846770771FB31336001B392D /* UIWebVIew+SwipeGesture.m in Sources */,
+				84103A321FEB94E0006B9165 /* BDBaseModel.m in Sources */,
 				84676FD21FB31336001B392D /* NSObject+EasyCopy.m in Sources */,
 				8467703E1FB31336001B392D /* UIResponder+Chain.m in Sources */,
 				84E92DF61FD1254C003E4FEB /* NSMutableArray+YXJSwipeUtilityButtons.m in Sources */,
+				84103A361FEB9C72006B9165 /* BDRequestAPI+BDSystemTimeAPI.m in Sources */,
+				84103A3F1FEBA6EA006B9165 /* NSURLSessionDataTask+JSON.m in Sources */,
 				84676FEB1FB31336001B392D /* NSString+UUID.m in Sources */,
 				845C70DE1FB17CE9009ED54C /* Target_Public.m in Sources */,
 				84676D4F1FB29CD6001B392D /* BDHomeConfigManager.m in Sources */,
 				8467700F1FB31336001B392D /* UIColor+HEX.m in Sources */,
+				842588A31FEA3B2600E05CEB /* BDUser.m in Sources */,
 				849977121FB06080003C8811 /* BDCoreConfigManager.m in Sources */,
 				846770131FB31336001B392D /* UIControl+ActionBlocks.m in Sources */,
+				84F734B01FF4C2BF000B3BBE /* UITableView+BDAutoEmptyTable.m in Sources */,
 				84676FA91FB31336001B392D /* NSArray+SafeAccess.m in Sources */,
 				846770791FB31336001B392D /* UIWindow+Hierarchy.m in Sources */,
 				84676F9E1FB31336001B392D /* NSManagedObjectContext+Extensions.m in Sources */,
@@ -2996,18 +3311,24 @@
 				846770481FB31336001B392D /* UITableView+iOS7Style.m in Sources */,
 				8467704E1FB31336001B392D /* UITableViewCell+TS_delaysContentTouches.m in Sources */,
 				846770391FB31336001B392D /* UINavigationController+StackManager.m in Sources */,
+				84286D141FF630A300794A0D /* NSObject+BDNonBase.m in Sources */,
 				846770221FB31336001B392D /* UIImage+GIF.m in Sources */,
 				84676FF31FB31336001B392D /* NSURLRequest+ParamsFromDictionary.m in Sources */,
 				84676FBF1FB31336001B392D /* NSDictionary+XML.m in Sources */,
+				842588B61FEA837700E05CEB /* BDNetWorkConstants.m in Sources */,
+				84F734AA1FF49D26000B3BBE /* UITableView+BDEmptyTable.m in Sources */,
 				84676FFF1FB31336001B392D /* UIApplication+NetworkActivityIndicator.m in Sources */,
 				8467701E1FB31336001B392D /* UIImage+Capture.m in Sources */,
 				846770081FB31336001B392D /* UIButton+Block.m in Sources */,
 				849977161FB060C0003C8811 /* BDFileLogger.m in Sources */,
 				84E586FA1FCBBB7C00283927 /* BDLinkViewController.m in Sources */,
+				842588A61FEA3B5800E05CEB /* BDUserProfile.m in Sources */,
 				846770631FB31336001B392D /* UIView+Shake.m in Sources */,
 				84676FE81FB31336001B392D /* NSString+Size.m in Sources */,
+				84103A2C1FEB5F69006B9165 /* BDAppKeys.m in Sources */,
 				8467706C1FB31336001B392D /* UIViewController+MJPopupViewController.m in Sources */,
 				84676FF21FB31336001B392D /* NSMutableURLRequest+Upload.m in Sources */,
+				84286D071FF619F200794A0D /* BDLoginButton.m in Sources */,
 				84676FEF1FB31336001B392D /* NSURL+Param.m in Sources */,
 				8467701D1FB31336001B392D /* UIImage+Blur.m in Sources */,
 				8467705F1FB31336001B392D /* UIView+GestureCallback.m in Sources */,
@@ -3022,7 +3343,9 @@
 				846770731FB31336001B392D /* UIWebView+JS.m in Sources */,
 				84676FF11FB31336001B392D /* NSURLConnection+SelfSigned.m in Sources */,
 				846770271FB31336001B392D /* UIImage+Resize.m in Sources */,
+				842588B01FEA457A00E05CEB /* BDKeyChainUtil.m in Sources */,
 				84676FAB1FB31336001B392D /* NSData+APNSToken.m in Sources */,
+				84103A261FEB588F006B9165 /* BDRequestAPI.m in Sources */,
 				84676FCF1FB31336001B392D /* NSObject+AssociatedObject.m in Sources */,
 				846770441FB31336001B392D /* UIScrollView+EmptyDataSet.m in Sources */,
 				84676FEC1FB31336001B392D /* NSString+XML.m in Sources */,
@@ -3061,6 +3384,7 @@
 				846770151FB31336001B392D /* UIDevice+Hardware.m in Sources */,
 				845C70EF1FB184FC009ED54C /* BDOrderViewController.m in Sources */,
 				8467705C1FB31336001B392D /* UIView+FDCollapsibleConstraints.m in Sources */,
+				842588A91FEA400500E05CEB /* BDDefaultsConst.m in Sources */,
 				846770301FB31336001B392D /* UILabel+AutomaticWriting.m in Sources */,
 				84676D6F1FB2F494001B392D /* BDShareHelper.m in Sources */,
 			);

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9E516FF79333933F4EE6E0A865D48821'
+               BlueprintIdentifier = '89C7DFD115245D3469FAE8326AC982F3'
                BlueprintName = 'XZPickView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXZPickView.a'>

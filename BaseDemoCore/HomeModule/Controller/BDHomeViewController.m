@@ -59,8 +59,7 @@ static NSString *kMBProgressView=@"MBProgress显示";
         
         make.edges.mas_equalTo(edge);
     }];
-    
-    
+
     // Do any additional setup after loading the view.
 }
 
@@ -105,7 +104,6 @@ static NSString *kMBProgressView=@"MBProgress显示";
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:[UITableViewCell description]];
-    
     NSString *cellString=[self.dataArray objectAtIndex:indexPath.row];
     cell.textLabel.text=cellString;
     return cell;
@@ -128,8 +126,22 @@ static NSString *kMBProgressView=@"MBProgress显示";
     }
 }
 
-
-
+-(void)setupTabBarHomeRedHotValue:(NSInteger)value
+{
+    self.navigationController.tabBarItem.badgeValue=[@(value) stringValue];
+}
+-(NSInteger)homeTableDataUnReadNumber
+{
+    NSInteger numberCount=0;
+    for (NSString *string in self.dataArray)
+    {
+        if ([string isEqualToString:kTosatView])
+        {
+            numberCount++;
+        }
+    }
+    return numberCount;
+}
 
 
 

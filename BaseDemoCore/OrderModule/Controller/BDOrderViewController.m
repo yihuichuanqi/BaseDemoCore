@@ -8,21 +8,52 @@
 
 #import "BDOrderViewController.h"
 
-@interface BDOrderViewController ()
+@interface BDOrderViewController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) NSMutableArray *dataArray;
 @end
 
 @implementation BDOrderViewController
 
+-(UITableView *)tableView
+{
+    if (!_tableView)
+    {
+        _tableView=[[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate=self;
+        _tableView.dataSource=self;
+        _tableView.tableFooterView=[[UIView alloc]init];
+    }
+    return _tableView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor=[UIColor purpleColor];
     
+    self.dataArray=[[NSMutableArray alloc]init];
+    [self.view addSubview:self.tableView];
     
     
     // Do any additional setup after loading the view.
 }
+#pragma mark-Table
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataArray.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:[UITableViewCell description]];
+    cell.textLabel.text=@"订单ID";
+    return cell;
+}
+
 
 -(NSMutableAttributedString *)setTitle
 {

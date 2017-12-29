@@ -1,0 +1,1 @@
+../../../GJRedDot/GJRedDot/GJRedDotManager.h

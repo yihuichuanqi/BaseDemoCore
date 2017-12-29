@@ -10,6 +10,13 @@
 #import "BDCoreConfigManager.h"
 #import "BDCYLTabBarControllerConfig.h"
 
+#import "BDUserManager.h"
+#import "BDDefaultsConst.h"
+#import "BDRouter.h"
+#import "BDAppConst.h"
+#import "BDAppStatus.h"
+#import "BDRedHotRegister.h"
+
 @interface AppDelegate ()<UITabBarControllerDelegate,CYLTabBarControllerDelegate>
 
 @end
@@ -19,6 +26,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    if (BDIsRunningInDemoMode)
+    {
+        [[BDUserManager sharedManager] disableSharedWebCredentials];
+        [BDUserManager clearUserData];
+    }
+    //运行进程的系统环境变量
+    if ([[NSProcessInfo processInfo] environment][@"TEST_SCENARIO"])
+    {
+        
+    }
+    
+    //配置本地存储Defaults
+    [BDDefaultsConst setup];
+    //配置Routs
+    [BDRouter setup];
+    
+    //配置红点
+    [self setupRedHotProfiles];
+
     
     //基础模块配置
     BDCoreConfigManager *bdCoreConfig=[BDCoreConfigManager sharedInstance];
@@ -33,6 +60,25 @@
     
     return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
+
+#pragma mark-配置红点
+-(void)setupRedHotProfiles
+{
+    [GJRedDot registWithProfile:[BDRedHotRegister redhotRegisterProfiles] defaultShow:NO];
+    [GJRedDot setDefaultColor:[UIColor orangeColor]];
+    [GJRedDot setDefaultRadius:5];
+}
+
+#pragma mark-管理权限工具配置
+-(void)setupAdminTools
+{
+
+    if (!BDAppStatus.isBetaDevOrAdmin)
+    {
+        return;
+    }
+}
+
 #pragma mark-配置TabBarController
 -(void)setupCYLTabBarController
 {

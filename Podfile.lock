@@ -25,11 +25,16 @@ PODS:
   - CYLTabBarController (1.14.2)
   - EasyNavigation (1.0.1)
   - FLEX (2.4.0)
+  - GJRedDot (1.1.1):
+    - GJRedDot/GJDeallocBlockExecutor (= 1.1.1)
+  - GJRedDot/GJDeallocBlockExecutor (1.1.1)
   - GVUserDefaults (1.0.2)
+  - ISO8601DateFormatter (0.8)
   - JSONModel (1.0.2)
   - LEEAlert (1.1.4)
   - Masonry (0.6.4)
   - MBProgressHUD+WJExtension (1.3.1)
+  - MJExtension (3.0.13)
   - pop (1.0.10)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -49,6 +54,7 @@ PODS:
     - SDWebImage/Core (= 3.7.6)
   - SDWebImage/Core (3.7.6)
   - Toast (3.1.0)
+  - UICKeyChainStore (2.1.1)
   - XAspect (1.0.5):
     - XAspect/Core (= 1.0.5)
     - XAspect/Macros (= 1.0.5)
@@ -69,11 +75,14 @@ DEPENDENCIES:
   - CYLTabBarController (~> 1.14.2)
   - EasyNavigation (~> 1.0.1)
   - FLEX (~> 2.4.0)
+  - GJRedDot (~> 1.1.1)
   - GVUserDefaults (~> 1.0.2)
+  - ISO8601DateFormatter (~> 0.8)
   - JSONModel (~> 1.0.1)
   - LEEAlert (~> 1.1.4)
   - Masonry (~> 0.6.1)
   - MBProgressHUD+WJExtension (~> 1.3.1)
+  - MJExtension (~> 3.0.13)
   - pop (~> 1.0.10)
   - ReactiveCocoa (~> 2.5)
   - RealReachability (~> 1.1.9)
@@ -81,6 +90,7 @@ DEPENDENCIES:
   - SCNavigationControlCenter (~> 0.1.5)
   - SDWebImage (~> 3.7.5)
   - Toast (~> 3.1.0)
+  - UICKeyChainStore (~> 2.1.1)
   - XAspect (~> 1.0.5)
   - XZPickView (~> 1)
   - YTKNetwork (~> 2.0.4)
@@ -94,11 +104,14 @@ SPEC CHECKSUMS:
   CYLTabBarController: 5eac1940e20aa934a609ecec38837da63a41dcfe
   EasyNavigation: f6e5dd4eccedd2245f505474a8f78daeecacc4b7
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  GJRedDot: de661162a700f3395f0cd70f3629e4d3abe8e181
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
+  ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   LEEAlert: a18b373706e58d3ac2ffeb90ac35ebb27739ad4a
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD+WJExtension: 1d9c93951b49e8c711fef6e6089aa6d7d3321192
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
@@ -106,11 +119,12 @@ SPEC CHECKSUMS:
   SCNavigationControlCenter: 9629009635a9c9e10c5106cec9b67204eae0f870
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
   XZPickView: 26a9ce7edc2280dd81b8c228559d29d4e6ab969e
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 30ed69cb887fafaabd6817c1c2d492206b1da8a0
+PODFILE CHECKSUM: 8eab53a6596a77c3c5625e9fcae954fc2821b848
 
 COCOAPODS: 1.3.1

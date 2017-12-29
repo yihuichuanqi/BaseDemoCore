@@ -31,7 +31,10 @@ pod 'LEEAlert', '~> 1.1.4'
 pod 'XZPickView', '~> 1'
 pod 'EasyNavigation', '~> 1.0.1'
 pod 'SCNavigationControlCenter', '~> 0.1.5'
-
+pod 'ISO8601DateFormatter', '~> 0.8'
+pod 'UICKeyChainStore', '~> 2.1.1'
+pod 'MJExtension', '~> 3.0.13'
+pod 'GJRedDot', '~> 1.1.1'
 
 
 end

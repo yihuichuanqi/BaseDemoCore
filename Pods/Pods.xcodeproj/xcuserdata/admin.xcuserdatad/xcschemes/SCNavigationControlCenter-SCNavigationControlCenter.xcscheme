@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '441F9009E90B1632AB6FD5AB4ED10DD9'
+               BlueprintIdentifier = '3993C624D18D1EB1418E45A4D313188B'
                BlueprintName = 'SCNavigationControlCenter-SCNavigationControlCenter'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SCNavigationControlCenter.bundle'>

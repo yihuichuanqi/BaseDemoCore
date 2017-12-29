@@ -49,6 +49,12 @@
     UIViewController *linkVC=[[BDLinkViewController alloc]init];
     BDBaseNavigationViewController *publicNav=[[BDBaseNavigationViewController alloc]initWithRootViewController:linkVC];
 
+    
+    [self setRedDotKey:BD_RedHot_TabBar_Home refreshBlock:^(BOOL show) {
+        
+        mineNav.tabBarItem.showRedDot=show;
+    }];
+    
     NSArray *viewControllers=@[homeNav,publicNav,mineNav];
     return viewControllers;
 }

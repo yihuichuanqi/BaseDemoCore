@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '50F4B760D748BF3C7CAD8ABB2CF71CAE'
+               BlueprintIdentifier = 'E0C635FD26CE30C1423E436E30A39895'
                BlueprintName = 'XAspect'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libXAspect.a'>

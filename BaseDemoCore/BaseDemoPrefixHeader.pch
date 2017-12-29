@@ -20,12 +20,26 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#import "BDRedHotRegister.h"
+#import "BDModelProtocol.h"
+#import "BDViewProtocol.h"
+#import "BDViewModelProtocol.h"
+#import "BDViewControllerProtocol.h"
+
+
+
+
 #import <Toast/UIView+Toast.h>
 #import <pop/POP.h>
 #import <LEEAlert/LEEAlert.h>
 #import <EasyNavigation/EasyNavigation.h>
 #import <Masonry/Masonry.h>
 #import <SCNavigationControlCenter/SCNavigationControlCenter.h>
+#import <ISO8601DateFormatter/ISO8601DateFormatter.h>
+#import <UICKeyChainStore/UICKeyChainStore.h>
+#import <MJExtension/MJExtension.h>
+#import <GJRedDot/GJRedDot.h>
+
 #endif
 
 
