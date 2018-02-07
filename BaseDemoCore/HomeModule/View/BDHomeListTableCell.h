@@ -12,4 +12,7 @@
 
 -(void)setCellBgViewColor:(UIColor *)color;
 -(void)configureBDHomeListTableCell:(NSString *)value;
+-(void)configureBDHomeListTableCell:(NSString *)value withIconImage:(UIImage *)icon;
+-(void)configureBDHomeListTableCell:(NSString *)value withIconName:(NSString *)iconName;
+
 @end

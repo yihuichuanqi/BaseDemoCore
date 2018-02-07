@@ -9,12 +9,16 @@
 #import "BDHomeListViewController.h"
 #import "BDHomeModulePrefix.h"
 #import "BDHomeListTableCell.h"
+#import "BDBasicConfigService.h"
+#import "BDVehicleBrandModel.h"
+#import "BDSocialService.h"
+#import "BDSocialTopicModel.h"
 
 @interface BDHomeListViewController ()<UITableViewDataSource,UITableViewDelegate,YXJSwipeTableViewCellDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
 
-@property (nonatomic,strong) NSArray *dataArray;
+@property (nonatomic,strong) NSMutableArray *dataArray;
 @property (nonatomic,strong) NSMutableArray *buttonArray;
 @end
 
@@ -42,11 +46,13 @@
     }
     return _tableView;
 }
--(NSArray *)dataArray
+-(NSMutableArray *)dataArray
 {
     if(!_dataArray)
     {
-        _dataArray=@[@"ShowSuccess",@"showAuto",@"showIconRemainTime",@"showLoad",@"showProgress"];
+        _dataArray=[[NSMutableArray alloc]init];
+//        NSArray *array=[BDBasicConfigService sharedService].socialBrandArray;
+//        [_dataArray setArray:array];
     }
     return _dataArray;
 }
@@ -63,14 +69,33 @@
         make.edges.equalTo(self.view);
     }];
     
+    UIImage *immm=[[BDBasicConfigService sharedService] clusterAnnotationImage];
     
+    [self requestDataList];
     // Do any additional setup after loading the view.
 }
+
+#pragma mark-获取数据列表
+-(void)requestDataList
+{
+    WEAKSELF_DEFINE
+    [[BDSocialService sharedService] getSocialTopicListForType:2 brandId:@"149" userId:nil keyword:@"" page:1 pageSize:15 complete:^(NSArray *topicArray, NSError *error) {
+        
+        STRONGSELF_DEFINE
+        [strongSelf.dataArray addObjectsFromArray:topicArray];
+        [strongSelf.tableView reloadData];
+    }];
+}
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     BDHomeListTableCell *cell=[tableView dequeueReusableCellWithIdentifier:[BDHomeListTableCell description]];
-    [cell configureBDHomeListTableCell:self.dataArray[indexPath.row]];
+    cell.selectionStyle=UITableViewCellSelectionStyleNone;
+//    BDVehicleBrandModel *model=self.dataArray[indexPath.row];
+//    [cell configureBDHomeListTableCell:model.name withIconImage:model.iconImage];
+    BDSocialTopicModel *model=self.dataArray[indexPath.row];
+    [cell configureBDHomeListTableCell:model.name withIconName:model.imageUrl];
     [cell setRightUtilityButtons:self.buttonArray WithButtonWidth:50];
     cell.delegate=self;
     return cell;
@@ -86,26 +111,6 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *rowString=self.dataArray[indexPath.row];
-//    if ([rowString isEqualToString:@"ShowSuccess"])
-//    {
-//        [MBProgressHUD showSuccess:@"成功" ToView:nil];
-//    }
-//    else if ([rowString isEqualToString:@"showAuto"])
-//    {
-//        [MBProgressHUD showAutoMessage:@"自动显示" ToView:self.view];
-//    }
-//    else if ([rowString isEqualToString:@"showIconRemainTime"])
-//    {
-//        [MBProgressHUD showIconMessage:@"保持消失" ToView:self.view RemainTime:5];
-//    }
-//    else if ([rowString isEqualToString:@"showLoad"])
-//    {
-//        [MBProgressHUD showLoadToView:self.view];
-//    }
-//    else if ([rowString isEqualToString:@"showProgress"])
-//    {
-//        [MBProgressHUD showProgressToView:self.view ToText:@"进度展示"];
-//    }
 }
 #pragma mark-YXJSwipeTableViewCell delegate
 -(void)swipeableTableViewCell:(YXJSwipeTableViewCell *)cell didTriggerRightUtilityButtonWithIndex:(NSInteger)index

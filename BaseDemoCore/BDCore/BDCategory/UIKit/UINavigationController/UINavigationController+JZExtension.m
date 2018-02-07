@@ -156,7 +156,7 @@
     self._push_pop_Finished = completion;
     UIViewController *viewController = [self _popViewControllerAnimated:animated];
     UIViewController *visibleViewController = [self visibleViewController];
-    [self _navigationWillTransitFromViewController:viewController toViewController:visibleViewController animated:animated isInterActiveTransition:YES];
+    [self _navigationWillTransitFromViewController:viewController toViewController:visibleViewController animated:animated isInterActiveTransition:NO];
     return viewController;
 }
 

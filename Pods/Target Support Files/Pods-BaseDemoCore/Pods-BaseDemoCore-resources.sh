@@ -84,10 +84,14 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_resource "${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle"
+  install_resource "${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle"
   install_resource "${PODS_ROOT}/EasyNavigation/EasyNavigation/EasyNavButton.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/SCNavigationControlCenter/SCNavigationControlCenter.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_resource "${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle"
+  install_resource "${PODS_ROOT}/AMapNavi/AMapNaviKit.framework/AMapNavi.bundle"
   install_resource "${PODS_ROOT}/EasyNavigation/EasyNavigation/EasyNavButton.bundle"
   install_resource "$PODS_CONFIGURATION_BUILD_DIR/SCNavigationControlCenter/SCNavigationControlCenter.bundle"
 fi

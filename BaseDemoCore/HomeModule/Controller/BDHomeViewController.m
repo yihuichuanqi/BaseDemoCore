@@ -9,6 +9,12 @@
 #import "BDHomeViewController.h"
 #import "CTMediator+BDHomeModuleActions.h"
 #import "BDProgressHud.h"
+#import "BDActionSheetViewController.h"
+#import "BDHomeListViewController.h"
+#import "BDSpotService.h"
+#import "BDSpotModel.h"
+#import "BDSpotFilter.h"
+
 static NSString *kTosatView=@"Toast显示";
 static NSString *kMBProgressView=@"MBProgress显示";
 
@@ -88,7 +94,9 @@ static NSString *kMBProgressView=@"MBProgress显示";
 //    
 //    
 //    return;
-    UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Home_ViewControllerForHomeList:nil];
+    
+    BDHomeListViewController *viewController=[[BDHomeListViewController alloc]init];
+//    UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Home_ViewControllerForHomeList:nil];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 
@@ -105,7 +113,8 @@ static NSString *kMBProgressView=@"MBProgress显示";
 {
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:[UITableViewCell description]];
     NSString *cellString=[self.dataArray objectAtIndex:indexPath.row];
-    cell.textLabel.text=cellString;
+    NSString *uuu=[[UIDevice currentDevice] identifierForVendor].UUIDString;
+    cell.textLabel.text=uuu;
     return cell;
 }
 
@@ -123,6 +132,28 @@ static NSString *kMBProgressView=@"MBProgress显示";
     else if ([cellString isEqualToString:kMBProgressView])
     {
         [BDProgressHud showAutoMessage:@"滋滋滋滋" ToView:nil];
+//        [MBProgressHUD showWarn:@"系统繁忙，请稍后重试" ToView:self.view];
+//        [MBProgressHUD showProgressToView:self.view ToText:@"加载中..."];
+//        [MBProgressHUD showLoadToView:self.tabBarController.view];
+        
+        
+        BDActionSheetViewController *actionSheet= [[BDActionSheetViewController alloc]initWithDismissBlock:^(ActionSheetItem *item, NSIndexPath *indexPath) {
+
+            if (indexPath.section==0&&indexPath.row==0)
+            {
+                NSLog(@"模块首航");
+            }
+        }];
+        [actionSheet addButtonTitle:@"文字" atGroup:0 selectHandler:^(ActionSheetItem *item) {
+            NSLog(@"文字");
+        }];
+        [actionSheet addButtonTitle:@"图片" atGroup:0 selectHandler:^(ActionSheetItem *item) {
+            NSLog(@"tupau");
+        }];
+        [actionSheet addCancelButtonTitle:@"取消" atGroup:1 selectHandler:nil];
+
+        [actionSheet showInViewController:self];
+    
     }
 }
 

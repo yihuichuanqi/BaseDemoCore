@@ -7,6 +7,7 @@
 //
 
 #import "BDBaseNavigationViewController.h"
+#import "UINavigationController+JZExtension.h"
 
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_X (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 812.0f)
@@ -21,7 +22,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
     // Do any additional setup after loading the view.
 }
 #pragma mark-设置效果类似多任务效果

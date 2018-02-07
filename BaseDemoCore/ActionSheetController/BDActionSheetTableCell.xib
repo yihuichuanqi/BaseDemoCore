@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="0UZ-6A-WMJ" customClass="BDActionSheetTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0UZ-6A-WMJ" id="PSO-Ub-IrQ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XDK-A9-eyf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAX-S9-Xdl">
+                                <rect key="frame" x="0.0" y="137" width="375" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="AzH-ll-nmR"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="取消" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDU-h6-Awd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="137"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IDU-h6-Awd" firstAttribute="top" secondItem="XDK-A9-eyf" secondAttribute="top" id="4LW-Bf-9be"/>
+                            <constraint firstItem="IDU-h6-Awd" firstAttribute="leading" secondItem="XDK-A9-eyf" secondAttribute="leading" id="C5d-jN-wpe"/>
+                            <constraint firstAttribute="bottom" secondItem="KAX-S9-Xdl" secondAttribute="bottom" id="O1K-jb-DKS"/>
+                            <constraint firstAttribute="trailing" secondItem="KAX-S9-Xdl" secondAttribute="trailing" id="WLZ-5u-b1x"/>
+                            <constraint firstAttribute="trailing" secondItem="IDU-h6-Awd" secondAttribute="trailing" id="bLv-Za-3wq"/>
+                            <constraint firstItem="KAX-S9-Xdl" firstAttribute="top" secondItem="IDU-h6-Awd" secondAttribute="bottom" id="lCu-yE-0EL"/>
+                            <constraint firstItem="KAX-S9-Xdl" firstAttribute="leading" secondItem="XDK-A9-eyf" secondAttribute="leading" id="rlN-dC-XVf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XDK-A9-eyf" firstAttribute="top" secondItem="PSO-Ub-IrQ" secondAttribute="top" id="QpF-kg-TM7"/>
+                    <constraint firstItem="XDK-A9-eyf" firstAttribute="leading" secondItem="PSO-Ub-IrQ" secondAttribute="leading" id="UKO-Ee-0Ge"/>
+                    <constraint firstAttribute="bottom" secondItem="XDK-A9-eyf" secondAttribute="bottom" id="fO6-2B-yPd"/>
+                    <constraint firstAttribute="trailing" secondItem="XDK-A9-eyf" secondAttribute="trailing" id="rRr-rB-CZf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="centerLabel" destination="IDU-h6-Awd" id="qSy-iI-2G1"/>
+                <outlet property="lineView" destination="KAX-S9-Xdl" id="6Dw-2w-5UP"/>
+            </connections>
+            <point key="canvasLocation" x="-146.5" y="-4.5"/>
+        </tableViewCell>
+    </objects>
+</document>

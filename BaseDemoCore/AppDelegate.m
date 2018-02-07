@@ -16,6 +16,10 @@
 #import "BDAppConst.h"
 #import "BDAppStatus.h"
 #import "BDRedHotRegister.h"
+#import "BDMQTTManager.h"
+#import "BDSpotService.h"
+#import "BDConfigService.h"
+#import "BDLocationService.h"
 
 @interface AppDelegate ()<UITabBarControllerDelegate,CYLTabBarControllerDelegate>
 
@@ -27,6 +31,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    NSLog(@"uuuuuIS%@",[[UIDevice currentDevice] identifierForVendor].UUIDString);
+    
     if (BDIsRunningInDemoMode)
     {
         [[BDUserManager sharedManager] disableSharedWebCredentials];
@@ -37,6 +43,9 @@
     {
         
     }
+    //高德地图
+    [AMapServices sharedServices].apiKey=@"863b3ddeabab86b73ee58fe27248a00d";
+    [[BDLocationService sharedService] startUpdateLocation];
     
     //配置本地存储Defaults
     [BDDefaultsConst setup];
@@ -46,6 +55,12 @@
     //配置红点
     [self setupRedHotProfiles];
 
+    //下载配置包
+//    [[BDConfigService sharedService] requestConfig];
+    //下载充电点
+//    [[BDSpotService sharedServices] downloadSpotZip:NO];
+    //启动MQTT服务
+//    [[BDMQTTManager sharedManager] resumeConnectedTimer];
     
     //基础模块配置
     BDCoreConfigManager *bdCoreConfig=[BDCoreConfigManager sharedInstance];

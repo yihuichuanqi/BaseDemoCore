@@ -19,6 +19,14 @@
 //不同屏幕尺寸字体适配(320,568只是因为效果图为IPhone5，可根据实际情况设置修改)
 #define kScreenWidthRatio
 
+//加载图片
+#define kBDImage(image) [UIImage imageNamed:image]
+
+//弱引用
+#define WEAKSELF_DEFINE __weak __typeof(self)weakSelf = self;
+#define STRONGSELF_DEFINE __strong __typeof(weakSelf)strongSelf = weakSelf;
+
+
 //主屏幕
 #define Main_Screen_Height [[UIScreen mainScreen] bounds].size.height
 #define Main_Screen_Width  [[UIScreen mainScreen] bounds].size.width

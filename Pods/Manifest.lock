@@ -14,6 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - AMap3DMap (5.4.0):
+    - AMapFoundation (~> 1.3)
+  - AMapFoundation (1.4.2)
+  - AMapLocation (2.5.0):
+    - AMapFoundation (~> 1.4)
+  - AMapNavi (5.3.0):
+    - AMap3DMap (>= 5.3.0)
+    - AMapFoundation (~> 1.4)
+  - AMapSearch (5.4.0):
+    - AMapFoundation (~> 1.4)
   - Aspects (1.4.1)
   - CocoaLumberjack (3.3.0):
     - CocoaLumberjack/Default (= 3.3.0)
@@ -25,6 +35,9 @@ PODS:
   - CYLTabBarController (1.14.2)
   - EasyNavigation (1.0.1)
   - FLEX (2.4.0)
+  - FMDB (2.7.2):
+    - FMDB/standard (= 2.7.2)
+  - FMDB/standard (2.7.2)
   - GJRedDot (1.1.1):
     - GJRedDot/GJDeallocBlockExecutor (= 1.1.1)
   - GJRedDot/GJDeallocBlockExecutor (1.1.1)
@@ -35,7 +48,16 @@ PODS:
   - Masonry (0.6.4)
   - MBProgressHUD+WJExtension (1.3.1)
   - MJExtension (3.0.13)
+  - MQTTClient (0.10.1):
+    - MQTTClient/Core (= 0.10.1)
+  - MQTTClient/Core (0.10.1):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.10.1):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.10.1)
   - pop (1.0.10)
+  - Protobuf (3.5.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -55,6 +77,7 @@ PODS:
   - SDWebImage/Core (3.7.6)
   - Toast (3.1.0)
   - UICKeyChainStore (2.1.1)
+  - WRNavigationBar (1.0.2)
   - XAspect (1.0.5):
     - XAspect/Core (= 1.0.5)
     - XAspect/Macros (= 1.0.5)
@@ -63,12 +86,17 @@ PODS:
   - XAspect/Macros (1.0.5)
   - XZPickView (1):
     - Masonry
+  - YTKKeyValueStore (0.1.2):
+    - FMDB (~> 2.0)
   - YTKNetwork (2.0.4):
     - AFNetworking (~> 3.0)
   - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - AMapLocation (~> 2.5.0)
+  - AMapNavi (~> 5.3.0)
+  - AMapSearch (~> 5.4.0)
   - Aspects (~> 1.4.1)
   - CocoaLumberjack (~> 3.3.0)
   - CTMediator (~> 12)
@@ -83,7 +111,9 @@ DEPENDENCIES:
   - Masonry (~> 0.6.1)
   - MBProgressHUD+WJExtension (~> 1.3.1)
   - MJExtension (~> 3.0.13)
+  - MQTTClient (~> 0.10.1)
   - pop (~> 1.0.10)
+  - Protobuf (~> 3.5.0)
   - ReactiveCocoa (~> 2.5)
   - RealReachability (~> 1.1.9)
   - SCLAlertView-Objective-C (~> 1.1.2)
@@ -91,19 +121,27 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7.5)
   - Toast (~> 3.1.0)
   - UICKeyChainStore (~> 2.1.1)
+  - WRNavigationBar (~> 1.0.2)
   - XAspect (~> 1.0.5)
   - XZPickView (~> 1)
+  - YTKKeyValueStore (~> 0.1.2)
   - YTKNetwork (~> 2.0.4)
   - YYCache (~> 1.0.4)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  AMap3DMap: 3eb906ac6b9d488413ab26c24f67eca4b4ad4641
+  AMapFoundation: 6c0471c9a6a0ad17dad46e3d800ad56ca170f82a
+  AMapLocation: d02bd8c0081b0bc51b2e4cf89925ef57448263c9
+  AMapNavi: 3f553beb42afdc4c18b2ca8137f9363038d8783d
+  AMapSearch: 97042f81c1c8ea8adc4b1dadf1b1a688210aa141
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   CTMediator: 83043d198b7ea73214d53375adfdd7f60edd4c1a
   CYLTabBarController: 5eac1940e20aa934a609ecec38837da63a41dcfe
   EasyNavigation: f6e5dd4eccedd2245f505474a8f78daeecacc4b7
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   GJRedDot: de661162a700f3395f0cd70f3629e4d3abe8e181
   GVUserDefaults: 52d48cf8ba578b40a1a76312b196dfc9134ba36a
   ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
@@ -112,7 +150,9 @@ SPEC CHECKSUMS:
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   MBProgressHUD+WJExtension: 1d9c93951b49e8c711fef6e6089aa6d7d3321192
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MQTTClient: a0f16ceec50bf80f606c37966c0b7fa8d9c9e739
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RealReachability: a8c483900986a0f3305733961effbfbb00637a02
   SCLAlertView-Objective-C: 0e54351fa4f98a5c7c6ad3727e6dbb46784534e5
@@ -120,11 +160,13 @@ SPEC CHECKSUMS:
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
   UICKeyChainStore: 239558492fa260531a0774cfc611ea83a6eaff3a
+  WRNavigationBar: c63d0e91f4a32ee68f00f0192013dcf0e36ddb45
   XAspect: db50bf487f92dbb8557a7a5365556966c8493af8
   XZPickView: 26a9ce7edc2280dd81b8c228559d29d4e6ab969e
+  YTKKeyValueStore: 4d002941540dd5108fa23009b71e0f2f937f7a0f
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: 8eab53a6596a77c3c5625e9fcae954fc2821b848
+PODFILE CHECKSUM: 8b68aa4b90b8cc6cfb1b9fa5505d08af2ba5ea93
 
 COCOAPODS: 1.3.1

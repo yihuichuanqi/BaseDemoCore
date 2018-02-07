@@ -1,0 +1,231 @@
+syntax = "proto3";
+enum MSG {
+
+//0-10:服务占用
+MSG_PLACEHOLDER =0;//占位（语法要求）
+MSG_REMOVE_CACHE =1; //清除本地缓存（服务端发起 针对单个设备）
+MSG_RESET_REQ =2;//重启请求包（服务端发起 针对单个设备）
+MSG_SET_WILL =3;//客户端已经下线（服务端发起 针对单个设备）
+//11-20 站点相关
+MSG_SPOT_STATUS_CHANGE =11; //站点状态改变（服务端发起 广播）
+MSG_SPOT_INFO_CHANGE =12;//站点信息改变(服务端发起 广播)
+MSG_REPORT_SPOT_UPDATE_TIME =13;//客户端上报本地站点最新一次的更新时间 服务器下发站点下载包地址（客户端发起）
+//21-30 私信相关
+MSG_RESPONSE_CHAT_MESSAGE_CHANGE =21; //通知客户端检查信息组（服务端发起 针对单个设备）
+//31-40 消息标记
+MSG_RESPONSE_RED_DOT_INFO =31; //新消息数量数组（服务端发起 针对单个设备）
+//41-50 订单状态
+MSG_RESPONSE_ORDER_STATUS_CHANGE =41; //订单状态改变（服务端发起 针对单个设备）
+//51-60 上报用户登录、设备基本属性
+MSG_REPORT_USER_LOGOUT =51;//上报客户端信息、用户信息（客户端发起）
+//61-70 配置相关
+MSG_CONFIG_CHANGE =61; //配置文件改变(服务端发起 广播)
+
+}
+//消息类型
+enum NOTICE {
+
+NOTICE_PLACEHOLDER =0; //占位（语法要求）
+NOTICE_SYSTEM =1; //系统通知（普通）
+NOTICE_FANS =2; //粉丝
+NOTICE_TIMELINE =3;//动态
+NOTICE_NEWSPOT =4;//新增站点
+NOTICE_ATME =5;//@我的消息数量
+NOTICE_LETTER =6;//私信数量
+NOTICE_SOCIAL =7;//社区消息数量
+NOTICE_MESSAGE_CENTER =8;//消息中心数量
+
+}
+
+//------------
+//通讯消息载体结构体
+//------------start
+message Base {
+
+int32 cmd =1; //MSG 枚举
+int32 timestamp =2; //时间戳 后台可使用此字段和上面的cmd字段组成一个64bit的unique id
+string devId =3; //设备ID
+bytes payload =4;//存放各种不同类型的消息序列化后的字符串
+}
+//------------end
+
+//------------
+//后台发起的指令
+//------------start
+//站点状态改变
+message SpotStatusChange {
+message Request {
+
+int64 spotId =1;//站点ID
+int32 status =2; //充电点状态
+int32 updateTime =3;//更新时间戳
+}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//站点信息改变
+message SpotInfoChange {
+
+message Request {}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//有新私信
+message ResponseChatMessage {
+
+message Request {
+
+int32 chatNum =1; //未读私信数量 本次协议暂不使用
+}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//订单状态改变
+message ResponseOrderStatusChange {
+
+message Request {
+
+int64 orderId =1; //状态改变的订单 本次协议暂不使用
+}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//消息红点结构体
+message RedDotInfo {
+
+NOTICE type =1; //消息类型
+int32 num =2;//数量
+}
+//消息数量
+message ResponseRedDotInfo {
+
+message Request {
+
+RedDotInfo redDotInfo =1; //消息数量详情
+}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//清除本地缓存
+message RemoveCache {
+
+message Request {}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//重启App
+message ResetReq {
+
+message Request {}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//配置文件有更新
+message ConfigChange {
+
+message Request {}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//------------end
+
+//-------------
+//app端发起的命令
+//-------------start
+//客户端断块连接（设置setwill来实现）
+message SetWill {
+
+message Request {}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//上一次更新压缩包时间
+message ReportSpotUpdateTime {
+
+message Request {
+
+int32  updateTime =1; //更新时间戳
+}
+message Confirm {
+
+string url =1; //下载地址
+string packages =2; //包名 英文逗号分隔
+string sign =3; //mdg校验值
+int32 updateTime =4; //更新时间戳
+int32 isFirst =5; //是否新包 1是 0否
+}
+Request req =1;
+Confirm conf =2;
+}
+//用户详情结构体
+message UserInfo {
+
+int64 uid =1; //用户id
+}
+//上报用户信息 设备信息
+message ReportDevInfo {
+
+message Request {
+
+UserInfo userinfo =1; //用户信息
+}
+message Confirm {
+
+int32 status =1;//0接受命令 非0错误命令
+}
+Request req =1;
+Confirm conf =2;
+}
+//--------------end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

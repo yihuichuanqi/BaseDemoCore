@@ -1,3 +1,14 @@
+#### 空间多项目配置
+###配置空间名称
+##workspace 'xx.xcworkspace'
+###配置项目名称
+##project 'xx1/xx1.xcodeproj'
+##project 'xx2/xx2.xcodeproj'
+###项目一配置
+##target 'xx1' do
+##project 'xx1/xx1.xcodeproj'
+##end
+
 
 platform :ios, '8.0'
 #use_frameworks!
@@ -35,7 +46,15 @@ pod 'ISO8601DateFormatter', '~> 0.8'
 pod 'UICKeyChainStore', '~> 2.1.1'
 pod 'MJExtension', '~> 3.0.13'
 pod 'GJRedDot', '~> 1.1.1'
-
+pod 'AMapSearch', '~> 5.4.0'
+pod 'AMapLocation', '~> 2.5.0'
+pod 'AMapNavi', '~> 5.3.0'
+pod 'WRNavigationBar', '~> 1.0.2'
+#pod 'MMDrawerController', '~> 0.6.0'
+pod 'YTKKeyValueStore', '~> 0.1.2'
+pod 'MQTTClient', '~> 0.10.1'
+pod 'Protobuf', '~> 3.5.0'
+#pod 'SSZipArchive', '~> 2.1.1'
 
 end
 

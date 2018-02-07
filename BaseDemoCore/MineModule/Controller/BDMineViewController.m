@@ -9,6 +9,8 @@
 #import "BDMineViewController.h"
 #import "BDMineServiceApi.h"
 #import "CTMediator+BDOrderModuleActions.h"
+#import "BDPathPlanViewController.h"
+#import "BDPathPlanPOIModel.h"
 
 @interface BDMineViewController ()
 
@@ -50,6 +52,25 @@
 }
 -(void)btnClicked:(UIButton *)button
 {
+
+    BDPathPlanPOIModel *oriPOI=[[BDPathPlanPOIModel alloc]init];
+    oriPOI.cityCode=@"100001";
+    oriPOI.name=@"北京";
+    oriPOI.address=@"天安门广场";
+    oriPOI.coordinate=CLLocationCoordinate2DMake(39.773671, 113.221126);
+    BDPathPlanPOIModel *desPOI=[[BDPathPlanPOIModel alloc]init];
+    desPOI.cityCode=@"200001";
+    desPOI.name=@"上海";
+    desPOI.address=@"东方大厦广场";
+    desPOI.coordinate=CLLocationCoordinate2DMake(31.778671, 117.226126);
+    
+    BDPathPlanViewController *planVC=[[BDPathPlanViewController alloc]init];
+    [planVC setupMapOrigin:oriPOI andDestination:desPOI];
+    [self.navigationController pushViewController:planVC animated:YES];
+    
+    
+    
+    return;
     UIViewController *viewController=[[CTMediator sharedInstance] CTMediator_Order_ViewControllerForOrder];
     [self.navigationController pushViewController:viewController animated:YES];
 }
